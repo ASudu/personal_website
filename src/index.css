@@ -1,0 +1,597 @@
+/* Copy all the CSS from style.css */
+/* ───────── Root & Theme Variables ───────── */
+:root {
+  --bg-light: rgba(255, 255, 255, 1);
+  --bg-dark: #1a1a1a;
+  
+  --bg-gradient-light:
+    radial-gradient(circle at top left, #d2b9ff, transparent 60%),
+    radial-gradient(circle at bottom left, #01a9f9, transparent 60%),
+    radial-gradient(circle at top right, #01fcb0, transparent 60%),
+    radial-gradient(circle at bottom right, #aec28a, transparent 60%);
+    
+  --bg-gradient-dark:
+    radial-gradient(circle at top left, #072538, transparent 60%),
+    radial-gradient(circle at bottom left, #000000, transparent 60%),
+    radial-gradient(circle at top right, #330847, transparent 60%),
+    radial-gradient(circle at bottom right, #000000, transparent 60%);
+    
+  --text-light: #000000;
+  --text-dark: #f0f0f0;
+  
+  --highlight-light: rgba(127, 255, 249, 0.6);
+  --highlight-dark: rgba(127, 255, 249, 0.6);
+  
+  --shadow-light: rgba(127, 255, 249, 0.5);
+  --shadow-dark: rgba(127, 255, 249, 0.5);
+  
+  --border-light: #01171f;
+  --border-dark: #7ffff9;
+  
+  --btn-bg-light: #01171f;
+  --btn-bg-dark: #7ffff9;
+}
+
+/* ───────── Base with Fixed Background ───────── */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Name Sans', sans-serif;
+  
+  /* Fixed background that doesn't scroll */
+  background: var(--bg-gradient-light);
+  background-color: var(--bg-light);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  color: var(--text-light);
+  
+  --theme-icon-color: var(--text-light);
+  --theme-border-color: var(--border-light);
+  --theme-btn-bg: var(--btn-bg-light);
+}
+
+/* Make sure the root container allows scrolling */
+#root {
+  min-height: 100vh;
+}
+
+/* ───────── Dark Theme Overrides ───────── */
+body.dark-mode {
+  background: var(--bg-gradient-dark);
+  background-color: var(--bg-dark);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  color: var(--text-dark);
+  
+  --theme-icon-color: var(--text-dark);
+  --theme-border-color: var(--border-dark);
+  --theme-btn-bg: var(--btn-bg-dark);
+}
+
+/* ───────── Theme Toggle Button ───────── */
+#themeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9999;
+  
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid var(--theme-border-color);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  
+  transition: box-shadow 0.3s ease;
+}
+
+#themeToggle:hover {
+  box-shadow: 0 0 8px var(--theme-border-color);
+}
+
+#themeToggle svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--theme-icon-color);
+  stroke-width: 2px;
+  transition: stroke 0.3s ease;
+}
+
+/* ───────── Hero Section - Transparent Background ───────── */
+.hero-section {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  
+  /* Remove background - let body background show through */
+  background: transparent;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-light);
+  text-align: center;
+  
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body.dark-mode .hero-section {
+  background: transparent;
+  color: var(--text-dark);
+}
+
+.hero-section h1 {
+  font-size: 5vw;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ───────── Main Content Section - Transparent Background ───────── */
+.page-content {
+  min-height: 100vh;
+  height: auto;
+  
+  /* Remove background - let body background show through */
+  background: transparent;
+  color: var(--text-light);
+  
+  position: relative;
+  width: 100%;
+  
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+
+body.dark-mode .page-content {
+  background: transparent;
+  color: var(--text-dark);
+}
+
+/* ───────── Contact Buttons - Add backdrop ───────── */
+.contact-methods {
+  display: flex;
+  flex-direction: row;
+  gap: 0.85em;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 2.5rem;
+  padding: 0.5em 1.5em;
+  font-size: 1.15rem;
+  font-family: inherit;
+  font-weight: 600;
+  border: 2px solid var(--theme-border-color);
+  border-radius: 999px;
+  
+  /* Add subtle backdrop for better visibility */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  
+  color: var(--theme-icon-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/* Remove underlines on all states */
+.contact-btn:hover,
+.contact-btn:focus,
+.contact-btn:active,
+.contact-btn:visited {
+  text-decoration: none;
+}
+
+.contact-btn i {
+  width: 1.3em;
+  height: 1.3em;
+  display: inline-flex;
+  vertical-align: middle;
+  color: var(--theme-icon-color);
+  transition: color 0.2s;
+}
+
+/* Light mode hover */
+.contact-btn:hover {
+  background: var(--btn-bg-light);
+  color: white;
+  border-color: var(--theme-border-color);
+  transform: translateY(-2px);
+}
+
+.contact-btn:hover i {
+  color: white;
+}
+
+/* Dark mode base */
+body.dark-mode .contact-btn {
+  border: 2px solid var(--theme-border-color);
+  color: var(--theme-icon-color);
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode .contact-btn i {
+  color: var(--theme-icon-color);
+}
+
+/* Dark mode hover */
+body.dark-mode .contact-btn:hover {
+  background: var(--btn-bg-dark);
+  color: black;
+  border-color: var(--theme-border-color);
+  transform: translateY(-2px);
+}
+
+body.dark-mode .contact-btn:hover i {
+  color: black;
+}
+
+/* ───────── Layout Containers - Transparent ───────── */
+.container {
+  display: flex;
+  min-height: calc(100vh - 4rem);
+  height: auto;
+  /* Add subtle backdrop for content area */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin: 0 2rem;
+}
+
+body.dark-mode .container {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5%;
+  font-size: 3vw;
+  box-sizing: border-box;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ───────── Enhanced Text Readability ───────── */
+.left h1, .left h2, .left h3 {
+  line-height: 1.2;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* ───────── Blog Links ───────── */
+.blog-link {
+  color: #8401ff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-link:hover {
+  color: #84003b;
+}
+
+body.dark-mode .blog-link {
+  color: #39ff14;
+}
+
+body.dark-mode .blog-link:hover {
+  color: #fffb00;
+}
+
+/* ───────── Content Sections ───────── */
+#content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-content.active {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Content-specific styles with backdrop */
+.contact-info, .blog-posts, .project-list, .publication-list {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.contact-info p, .project, .publication {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(127, 255, 249, 0.3);
+}
+
+body.dark-mode .contact-info p, 
+body.dark-mode .project, 
+body.dark-mode .publication {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* ───────── Footer - Transparent ───────── */
+footer {
+  background: transparent;
+  color: var(--text-light);
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode footer {
+  background: transparent;
+  color: var(--text-dark);
+}
+
+/* ───────── Mindmap Spokes - Fixed Alignment ───────── */
+.mindmap {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
+.center-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  
+  /* Black and white filter by default */
+  filter: grayscale(80%) sepia(20%);
+  
+  /* Smooth transition for scale and filter */
+  transition: transform 0.5s ease, filter 0.5s ease;
+  
+  /* Optional: Add a subtle shadow */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect: scale up and turn to color */
+.center-image:hover {
+  /* Scale up slightly */
+  transform: scale(1.25);
+  
+  /* Remove grayscale to show full color */
+  filter: grayscale(0%);
+  
+  /* Enhanced shadow on hover */
+  box-shadow: 0 6px 25px #001aff;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .center-image {
+  box-shadow: 0 4px 15px rgb(71, 128, 7);
+}
+
+body.dark-mode .center-image:hover {
+  box-shadow: 0 6px 25px rgb(79, 170, 0);
+}
+
+/* Make sure the center wrapper doesn't interfere with hover */
+.center-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250px;
+  height: 250px;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  background: transparent;
+  display: flex;
+  border-radius: 50%;
+  z-index: 10;
+  
+  /* Ensure smooth overflow for the scale effect */
+  overflow: visible;
+}
+
+.spoke-system {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  /* Fix the alignment by using the same transform as center-wrapper */
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.spoke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Fix spoke positioning to align with center */
+  transform-origin: 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 6;
+  pointer-events: auto;
+}
+
+/* Initial positioning for each spoke */
+.spoke[data-angle="180"] {
+  transform: rotate(180deg);
+}
+
+.spoke[data-angle="108"] {
+  transform: rotate(108deg);
+}
+
+.spoke[data-angle="36"] {
+  transform: rotate(36deg);
+}
+
+.spoke[data-angle="324"] {
+  transform: rotate(324deg);
+}
+
+.spoke[data-angle="252"] {
+  transform: rotate(252deg);
+}
+
+.spoke-line {
+  position: absolute;
+  width: 140px; /* Reduced from 180px to make spokes shorter */
+  height: 2px;
+  background: linear-gradient(90deg, #000000, rgb(2, 70, 67));
+  transform-origin: left center;
+  /* Start the line from the edge of the center image */
+  left: 125px; /* Half of center image width (250px / 2) */
+}
+
+.spoke-label {
+  position: absolute;
+  left: 275px; /* Adjusted: 125px (center offset) + 150px (new shorter offset) */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  transition: all 0.3s, color 0.3s, text-shadow 0.3s;
+  white-space: nowrap;
+  pointer-events: auto;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* Dark mode overrides */
+body.dark-mode .spoke-line {
+  background: linear-gradient(90deg, #39ff14, rgba(57, 255, 20, 0.3));
+}
+
+body.dark-mode .spoke-label {
+  color: #39ff14;
+}
+
+body.dark-mode .spoke-label:hover {
+  color: #fff;
+  text-shadow: 0 0 16px #39ff14;
+}
+
+body.dark-mode .spoke.active .spoke-label {
+  color: #fff;
+  text-shadow: 0 0 20px #39ff14;
+}
+
+.spoke:hover .spoke-line {
+  box-shadow: 0 0 10px rgba(127, 255, 249, 0.8);
+  background: linear-gradient(90deg, #7ffff9, rgba(127, 255, 249, 0.5));
+}
+
+body.dark-mode .spoke:hover .spoke-line {
+  box-shadow: 0 0 16px #39ff14;
+  background: linear-gradient(90deg, #39ff14, rgba(57, 255, 20, 0.5));
+}
+
+.spoke.active .spoke-line {
+  background: linear-gradient(90deg, #00fff2, #001aff);
+}
+
+body.dark-mode .spoke.active .spoke-line {
+  box-shadow: 0 0 24px #39ff14;
+  background: linear-gradient(90deg, #fff, #39ff14);
+}
+
+.spoke-label:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transform: translateY(-50%) scale(1.2);
+  font-weight: bold;
+}
+
+.spoke.active .spoke-label {
+  font-weight: bold;
+  transform: translateY(-50%) scale(1.2);
+  font-size: 20px;
+  color: #001aff;
+  text-decoration: none;
+}
+
+/* Counter-rotate labels to keep them upright - simplified */
+.spoke[data-angle="180"] .spoke-label {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.spoke[data-angle="108"] .spoke-label {
+  transform: translateY(-50%) rotate(-108deg);
+}
+
+.spoke[data-angle="36"] .spoke-label {
+  transform: translateY(-50%) rotate(-36deg);
+}
+
+.spoke[data-angle="324"] .spoke-label {
+  transform: translateY(-50%) rotate(-324deg);
+}
+
+.spoke[data-angle="252"] .spoke-label {
+  transform: translateY(-50%) rotate(-252deg);
+}
+
+/* Enhanced hover and active states with proper transforms */
+.spoke:hover .spoke-label {
+  font-weight: bold;
+  color: #001aff;;
+  text-decoration: none;
+}
+
+.spoke:hover .spoke-line {
+  box-shadow: 0 0 10px rgba(127, 255, 249, 0.8);
+  background: linear-gradient(90deg, #00fff2, #001aff);
+}
