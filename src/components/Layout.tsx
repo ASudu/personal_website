@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Moon, Sun, MapPin, Mail, Linkedin, GraduationCap, LucideGithub } from 'lucide-react';
+import { Moon, Sun} from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useFerrisWheel } from '../hooks/useFerrisWheel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faLocationDot, faGraduationCap, faFile, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -38,16 +41,16 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
     localStorage.setItem('theme', newIsDark ? 'dark' : 'light');
   };
 
-  // // Scroll from hero section to main content
-  // const scrollToMain = () => {
-  //   const mainSection = document.getElementById('mainContent');
-  //   if (mainSection) {
-  //     mainSection.scrollIntoView({ 
-  //       behavior: 'smooth',
-  //       block: 'start'
-  //     });
-  //   }
-  // };
+  // Scroll to a section by id
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
 
   return (
     <>
@@ -73,48 +76,52 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
             minHeight: '100vh',
             width: '100%',
             textAlign: 'center',
+            position: 'absolute',
+            top: 10,
+            left: 0,
+            right: 0,
+            bottom: 0,
           }}
         >
           {/* Main title */}
           <h1 style={{ fontSize: '8vw', letterSpacing: '0.8rem', fontWeight: 700, margin: 0 }}>
             SUDARSHAN ANAND
-          </h1>
-          
+          </h1>          
           {/* Subtitle and call-to-action */}
-          <div className="hero-subtitle" style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <div className="hero-subtitle" style={{ textAlign: 'center', marginTop: '0.5rem' }}>
             <span style={{ fontSize: '1.5rem' }}>
               AI Product Dev Intern | MS CSE @ GT | AI Researcher
             </span>
             <br />
             <br />
-            <span style={{ fontSize: '1.5rem' }}>
-              <MapPin size={16} /> Atlanta, GA
+            <span style={{ fontSize: '1.2rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              <FontAwesomeIcon icon={faEnvelope} style={{ verticalAlign: 'middle' }} /><a href="mailto:sanand315@gatech.edu" className='blog-link' style={{ verticalAlign: 'middle' }}>sanand315@gatech.edu</a>  |  <FontAwesomeIcon icon={faLocationDot} style={{ verticalAlign: 'middle' }} />Atlanta, GA
             </span>
-            <br />
-            {/* Button to scroll to main content */}
-            {/* <button 
-              className="hero-bottom-btn" 
-              onClick={scrollToMain} 
-              aria-label="Scroll to main content" 
-              style={{ marginTop: '1rem' }}
-            >
-              <span>Explore More</span>
-            </button> */}
           </div>
-          <div className="contact-methods" style={{ marginTop: '2rem' }}>
-            <a className="contact-btn" href="mailto:sanand315@gatech.edu" target="_blank" rel="noopener noreferrer">
-              <Mail size={20} /> Email
+          <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
+            <a className="contact-btn" href="/assets/files/Sudarshan_Anand_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Resume
             </a>
             <a className="contact-btn" href="https://www.linkedin.com/in/sudarshan-anand-360535211/" target="_blank" rel="noopener noreferrer">
-              <Linkedin size={20} /> LinkedIn
-            </a>
-            <a className="contact-btn" href="https://github.com/ASudu" target="_blank" rel="noopener noreferrer">
-              <LucideGithub size={20} /> GitHub
+              <FontAwesomeIcon icon={faLinkedin} style={{ verticalAlign: 'middle', scale: '1.2' }}/> LinkedIn
             </a>
             <a className="contact-btn" href="https://scholar.google.com/citations?user=0hOXk24AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-              <GraduationCap size={20} /> Google Scholar
+              <FontAwesomeIcon icon={faGraduationCap} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Google Scholar
+            </a>
+            <a className="contact-btn" href="https://github.com/ASudu" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} style={{ verticalAlign: 'middle', scale: '1.2' }} /> GitHub
             </a>
           </div> 
+          {/* Button to scroll to main content */}
+          <button 
+            className="hero-scroll-btn" 
+            onClick={scrollToSection.bind(null, 'mainContent')} 
+            aria-label="Scroll to main content" 
+            style={{ marginTop: '1rem' }}
+          >
+            <span>Explore More</span>
+            <FontAwesomeIcon icon={faCircleChevronDown} style={{ verticalAlign: 'middle', scale: '1.2', padding: '0.5rem 0.5rem' }} />
+          </button>
         </div>
       </section>
 
@@ -150,9 +157,9 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
               <div className="rotation-wrapper" id="rotationWrapper">
                 <div className="spoke-system" id="spokeSystem">
                   {/* Home spoke - 180 degrees (top) */}
-                  <div className={`spoke ${activePage === 'home' ? 'active' : ''}`} data-angle="180" data-page="home">
+                  <div className={`spoke ${activePage === 'about_me' ? 'active' : ''}`} data-angle="180" data-page="about_me">
                     <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/">Home</Link>
+                    <Link className="spoke-label" to="/">About Me</Link>
                   </div>
                   
                   {/* Blog spoke - 108 degrees */}

@@ -148,6 +148,51 @@ body.dark-mode .hero-section {
   margin: 0;
 }
 
+/* ───────── Hero scroll button ───────── */
+.hero-scroll-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 300;
+  
+  /* Stronger background for primary actions */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border: var(--theme-border-color) 1px solid;
+  border-radius: 999px;
+
+  color: var(--theme-icon-color);
+  opacity: 0.8;
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-scroll-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 1;
+  font-weight: 600;
+  border: var(--theme-border-color) 2px solid;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode for scroll button */
+body.dark-mode .hero-scroll-btn {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+}
+
+body.dark-mode .hero-scroll-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  font-weight: 600;
+  border: var(--theme-border-color) 2px solid;
+  transition: all 0.3s ease;
+}
+
 /* ───────── Main Content Section - Transparent Background ───────── */
 .page-content {
   min-height: 100vh;
@@ -169,7 +214,7 @@ body.dark-mode .page-content {
   color: var(--text-dark);
 }
 
-/* ───────── Contact Buttons - Add backdrop ───────── */
+/* ───────── Contact Buttons - Primary Action Buttons ───────── */
 .contact-methods {
   display: flex;
   flex-direction: row;
@@ -184,21 +229,21 @@ body.dark-mode .page-content {
   align-items: center;
   gap: 0.5em;
   margin-top: 2.5rem;
-  padding: 0.5em 1.5em;
+  padding: 0.75em 1.8em;
   font-size: 1.15rem;
   font-family: inherit;
   font-weight: 600;
   border: 2px solid var(--theme-border-color);
   border-radius: 999px;
   
-  /* Add subtle backdrop for better visibility */
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  /* Stronger background for primary actions */
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
   
   color: var(--theme-icon-color);
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-decoration: none;
 }
 
