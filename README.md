@@ -13,7 +13,7 @@ src/
 │   ├── Blog.tsx           # Blog page component
 │   ├── Contact.tsx        # Contact page component
 │   ├── Projects.tsx       # Projects page component
-│   ├── Publications.tsx   # Publications page component
+│   ├── Experience.tsx     # Edu & Experience page component
 │   └── ThankYou.tsx       # Thank you page component
 ├── hooks/
 │   └── useFerrisWheel.ts  # Custom hook for navigation functionality
