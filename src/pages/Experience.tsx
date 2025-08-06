@@ -29,8 +29,8 @@ const Experience: React.FC = () => {
         <div className="tab-content">
           {activeTab === 'education' && (
             <div className="education-section">
-              <div className="education-item">
-                <div className="university-logo">
+              <div className="experience-item">
+                <div className="org-logo">
                   <img 
                     src="/assets/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
@@ -38,13 +38,10 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    M.S. Computational Science and Engineering
+                    M.S. Computational Science and Engineering <p className='degree-duration'>[Aug 2024 - present]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    Georgia Institute of Technology, Atlanta, USA
-                  </p>
-                  <p style={{ fontSize: '1rem' }}>
-                    <strong>Duration:</strong> Aug 2024 - May 2026 (Expected)
+                    <em>Georgia Institute of Technology, Atlanta <br/> (Georgia, United States)</em>
                   </p>
                   <p style={{ fontSize: '1rem' }}>
                     <strong>Focus areas:</strong> Medical Imaging, Public Health, ML, DL
@@ -52,8 +49,8 @@ const Experience: React.FC = () => {
                 </div>
               </div>
 
-              <div className="education-item">
-                <div className="university-logo">
+              <div className="experience-item">
+                <div className="org-logo">
                   <img 
                     src="/assets/images/bits-logo.png" 
                     alt="BITS Pilani Logo"
@@ -61,13 +58,10 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    M.Sc. Mathematics + B.E. Computer Science (Dual Degree)
+                    M.Sc. Mathematics + B.E. Computer Science (Dual Degree) <p className='degree-duration'>[Aug 2019 - Aug 2024]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    Birla Institute of Technology and Science, Pilani, India
-                  </p>
-                  <p style={{ fontSize: '1rem' }}>
-                    <strong>Duration:</strong> Aug 2019 - Aug 2024
+                    <em>Birla Institute of Technology and Science, Pilani (Rajasthan, India)</em>
                   </p>
                   <p style={{ fontSize: '1rem' }}>
                     <strong>Focus areas:</strong> Graph theory, Graph ML. Responsible AI
@@ -79,54 +73,91 @@ const Experience: React.FC = () => {
 
           {activeTab === 'professional' && (
             <div className="professional-section">
-              <div className="experience-item" style={{ marginBottom: '2.5rem' }}>
-                <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                  AI Product Development Intern
-                </h4>
-                <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)', marginBottom: '0.3rem' }}>
-                  Rezolve.ai
-                </p>
-                <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>
-                  <strong>Duration:</strong> Start Date - Present
-                </p>
-                <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                  <li>Developed AI-powered product features</li>
-                  <li>Collaborated with cross-functional teams</li>
-                  <li>Implemented machine learning algorithms</li>
-                </ul>
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/rezolve-logo.png" 
+                    alt="Rezolve AI Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    AI Product Development Intern <p className='degree-duration'>[Jun 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Rezolve AI <br/> (California, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Developed AI-powered product features</li>
+                    <li>Collaborated with cross-functional teams</li>
+                    <li>Implemented machine learning algorithms</li>
+                  </ul>
+                </div>
               </div>
 
-              <div className="experience-item" style={{ marginBottom: '2.5rem' }}>
-                <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                  AI Researcher
-                </h4>
-                <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)', marginBottom: '0.3rem' }}>
-                  Responsible-AI for Decision Making Team, Georgia Tech
-                </p>
-                <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>
-                  <strong>Duration:</strong> Start Date - Present
-                </p>
-                <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                  <li>Research in healthcare AI applications</li>
-                  <li>Explainable AI methodologies</li>
-                  <li>Graph machine learning techniques</li>
-                </ul>
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Researcher @ Responsible-AI for Decision Making <p className='degree-duration'>[Jan 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Research in healthcare AI applications</li>
+                    <li>Explainable AI methodologies</li>
+                    <li>Graph machine learning techniques</li>
+                  </ul>
+                </div>
               </div>
 
-              <div className="experience-item" style={{ marginBottom: '2.5rem' }}>
-                <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                  Volunteer Position / Previous Role
-                </h4>
-                <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)', marginBottom: '0.3rem' }}>
-                  Organization Name
-                </p>
-                <p style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>
-                  <strong>Duration:</strong> Start Date - End Date
-                </p>
-                <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                  <li>Key responsibility or achievement</li>
-                  <li>Another important contribution</li>
-                </ul>
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Researcher @ AdityaLab <p className='degree-duration'>[Jan 2025 - May 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Developing <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source time-series library</li>
+                    <li>Benchmarking LPTM against other SOTA Time-series foundational models (Chronos, TimesFM, MOIRAI, etc)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/qure.ai-logo.png" 
+                    alt="Qure.ai Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    AI Scientist Intern <p className='degree-duration'>[Jan 2024 - June 2024]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Qure.ai, Bangalore <br/> (Karnataka, India)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Research in healthcare AI applications</li>
+                    <li>Explainable AI methodologies</li>
+                    <li>Graph machine learning techniques</li>
+                  </ul>
+                </div>
               </div>
             </div>
           )}
