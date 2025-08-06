@@ -179,11 +179,11 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
                     <div className="spoke-line"></div>
                     <Link className="spoke-label" to="/projects">Projects</Link>
                   </div>
-                  
-                  {/* Publications spoke - 324 degrees */}
-                  <div className={`spoke ${activePage === 'publications' ? 'active' : ''}`} data-angle="324" data-page="publications">
+
+                  {/* Experience spoke - 324 degrees */}
+                  <div className={`spoke ${activePage === 'experience' ? 'active' : ''}`} data-angle="324" data-page="experience">
                     <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/publications">Publications</Link>
+                    <Link className="spoke-label" to="/experience">Experience</Link>
                   </div>
                 </div>
               </div>

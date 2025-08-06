@@ -193,6 +193,74 @@ body.dark-mode .hero-scroll-btn:hover {
   transition: all 0.3s ease;
 }
 
+/* ───────── Experience tabs ───────── */
+.tab-navigation {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--theme-border-color);
+}
+
+.tab-btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--theme-text-secondary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px 8px 0 0;
+}
+
+.tab-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Dark mode tab styling */
+body.dark-mode .tab-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .tab-btn.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ───────── Experience content ───────── */
+.education-item {
+  display: flex;
+  width: 85%;
+  align-items: 'flex-start';
+  gap: '1rem';
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.university-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 1.5rem;
+}
+
+.university-logo img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: var(--bg-light);
+  padding: 0.2rem;
+}
+
 /* ───────── Main Content Section - Transparent Background ───────── */
 .page-content {
   min-height: 100vh;
