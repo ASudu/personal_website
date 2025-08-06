@@ -1,99 +1,135 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 const Projects: React.FC = () => {
+  const [activeTab, setActiveTab] = useState<'projects' | 'publications'>('projects');
+
   return (
     <Layout title="Projects | Sudarshan Anand" activePage="projects">
       <div id="projects-content">
         <h4>Projects</h4>
-        <p style={{ fontSize: '1.5rem' }}>Welcome to my blog where I share insights and experiences.</p>
-        <div className="blog-posts">
-          <article>
-            <h4 style={{ fontSize: '1.5rem' }}>Artificial Intelligence</h4>
-            <ul>
-              <li style={{ fontSize: '1rem' }}>
-                Alphageometry{' '}
-                <span style={{ fontSize: '0.9rem' }}>
-                  [<a 
-                    href="https://www.linkedin.com/pulse/alphageometry-sudarshan-anand-1u9nc/?trackingId=T8%2FZcQmAS3upeoSy8zaaeQ%3D%3D" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ color: '#39ff14' }}
-                  >
-                    article
-                  </a>]
-                </span>
-              </li>
-              <li style={{ fontSize: '1rem' }}>
-                Epidemiology: How AI is changing the game?{' '}
-                <span style={{ fontSize: '0.9rem' }}>
-                  [<a 
-                    href="https://www.linkedin.com/pulse/epidemiology-how-ai-changing-game-sudarshan-anand-ci5uc/?trackingId=o%2BcjJXfUTjCTJe5zshZHVA%3D%3D" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ color: '#39ff14' }}
-                  >
-                    article
-                  </a>]
-                </span>
-              </li>
-              <li style={{ fontSize: '1rem' }}>
-                Can AI see like humans?{' '}
-                <span style={{ fontSize: '0.9rem' }}>
-                  [<a 
-                    href="https://sudarshananand.substack.com/p/can-ai-see-like-humans-part-1" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    style={{ color: '#39ff14' }}
-                  >
-                    Part-1
-                  </a>]
-                </span>
-              </li>
-            </ul>
+        
+        {/* Tab Navigation */}
+        <div className="tab-navigation">
+          <button
+            className={`tab-btn ${activeTab === 'projects' ? 'active' : ''}`}
+            onClick={() => setActiveTab('projects')}
+          >
+            Projects
+          </button>
+          <button
+            className={`tab-btn ${activeTab === 'publications' ? 'active' : ''}`}
+            onClick={() => setActiveTab('publications')}
+          >
+            Publications
+          </button>
+        </div>
 
-            <h4 style={{ fontSize: '1.5rem' }}>Mathematics</h4>
-            <ul>
-              <li style={{ fontSize: '1rem' }}>
-                Graph is not a graph{' '}
-                <span style={{ fontSize: '0.9rem' }}>
-                  [<a 
-                    href="https://www.linkedin.com/pulse/graph-part-1-sudarshan-anand-krgec/?trackingId=VDcqqJSnRkS%2Fv3qf9fHMKg%3D%3D" 
+        {/* Tab Content */}
+        <div className="tab-content">
+          {activeTab === 'projects' && (
+            <div className="projects-section">
+              <div className="project-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    M.S. Computational Science and Engineering <p className='degree-duration'>[Aug 2024 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology, Atlanta <br/> (Georgia, United States)</em>
+                  </p>
+                  <p style={{ fontSize: '1rem' }}>
+                    <strong>Focus areas:</strong> Medical Imaging, Public Health, ML, DL
+                  </p>
+                </div>
+              </div>
+
+              <div className="project-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/bits-logo.png" 
+                    alt="BITS Pilani Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    M.Sc. Mathematics + B.E. Computer Science (Dual Degree) <p className='degree-duration'>[Aug 2019 - Aug 2024]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Birla Institute of Technology and Science, Pilani (Rajasthan, India)</em>
+                  </p>
+                  <p style={{ fontSize: '1rem' }}>
+                    <strong>Focus areas:</strong> Graph theory, Graph ML. Responsible AI
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'publications' && (
+            <div className="publications-section">
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Automated Generation of Circulations within a Floorplan <p className='project-duration'>[Apr 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Artificial Intelligence for Engineering Design, Analysis and Manufacturing, Cambridge University Press, Apr 2025</em>
+                  </p>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <strong>Authors:</strong> Shiksha, <strong>Sudarshan Anand</strong>, Krishnendra Shekhawat and Karan Agrawal
+                  </p>
+                  <p style={{ fontSize: '1.2rem' }}>
+                    [<a 
+                    className='blog-link'
+                    href="https://www.cambridge.org/core/journals/ai-edam/article/automated-generation-of-circulations-within-a-floorplan/17830B95C3A0B8120CE87C6F8610AA66?WT.mc_id=New%20Cambridge%20Alert%20-%20Articles" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    style={{ color: '#39ff14' }}
-                  >
-                    Part-1
-                  </a>]
-                  [<a 
-                    href="https://open.substack.com/pub/sudarshananand/p/graph-is-not-a-graph-part-2?r=51ptyu&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false" 
+                    >
+                    paper
+                    </a>]
+                    [<a 
+                    className='blog-link'
+                    href="https://www.gplan.in/" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    style={{ color: '#39ff14' }}
-                  >
-                    Part-2
-                  </a>]
-                </span>
-              </li>
-            </ul>
+                    >
+                    website
+                    </a>]
+                  </p>
+                </div>
+              </div>
 
-            <h4 style={{ fontSize: '1.5rem' }}>Miscellaneous</h4>
-            <ul>
-              <li style={{ fontSize: '1rem' }}>Coming soon...</li>
-            </ul>
-
-            <p style={{ fontSize: '0.9rem' }}>
-              For more articles, check out my{' '}
-              <a 
-                href="https://substack.com/@sudarshananand?utm_source=user-menu" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                style={{ color: '#39ff14' }}
-              >
-                Substack
-              </a> page.
-            </p>
-          </article>
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Consequences of fear effect and prey refuge on the Turing patterns in a delayed predator-prey system <p className='project-duration'>[Dec 2022]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Chaos: An Interdisciplinary Journal of Nonlinear Science, AIP Publishing LLC, Dec 2022</em>
+                  </p>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <strong>Authors:</strong> Anshu, Balram Dubey, Sourav Kumar Sasmal and <strong>Sudarshan Anand</strong>
+                  </p>
+                  <p style={{ fontSize: '1.2rem' }}>
+                    [<a 
+                    className='blog-link'
+                    href="https://doi.org/10.1063/5.0126782" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                    paper
+                    </a>]
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </Layout>
