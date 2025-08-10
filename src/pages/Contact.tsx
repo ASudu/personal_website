@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
               width: '100%' 
             }}
           >
-            <p style={{ marginBottom: '0.5em' }}>📝 Send a Message</p>
+            <p style={{ fontSize: '2rem', marginBottom: '0.5em' }}>📝 Drop a Message</p>
             <form 
               action="https://formsubmit.co/6d55d07ddf25d00101c8312d81107f1b" 
               method="POST" 
@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
                 id="message" 
                 name="message" 
                 rows={3} 
-                placeholder="Your Message" 
+                placeholder="Hi Sudarshan..." 
                 required 
                 style={{ 
                   padding: '0.5em', 
