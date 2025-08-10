@@ -30,41 +30,79 @@ const Projects: React.FC = () => {
           {activeTab === 'projects' && (
             <div className="projects-section">
               <div className="project-item">
-                <div className="org-logo">
-                  <img 
-                    src="/assets/images/gatech-logo.png" 
-                    alt="Georgia Tech Logo"
-                  />
-                </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    M.S. Computational Science and Engineering <p className='degree-duration'>[Aug 2024 - present]</p>
+                    Samay: Time-series Foundational Models Library <p className='project-duration'>[Jan 2025 - Jun 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    <em>Georgia Institute of Technology, Atlanta <br/> (Georgia, United States)</em>
+                    <em>Georgia Institute of Technology, Atlanta (Georgia, United States)</em>
                   </p>
-                  <p style={{ fontSize: '1rem' }}>
-                    <strong>Focus areas:</strong> Medical Imaging, Public Health, ML, DL
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Contributed in the development of <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source time-series library</li>
+                    <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
+                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on GiftEval benchmark</li>
+                    <li>Code repository: [<a className='blog-link' href="https://github.com/AdityaLab/Samay" target="_blank" rel="noopener noreferrer">Github</a>]</li>
+                  </ul>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    Technologies used:
+                    <br />
+                    <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/hf-logo.png" alt="Transformers" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Transformers</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NumPy</span>
+                      </span>
+                    </span>
                   </p>
                 </div>
               </div>
 
               <div className="project-item">
-                <div className="org-logo">
-                  <img 
-                    src="/assets/images/bits-logo.png" 
-                    alt="BITS Pilani Logo"
-                  />
-                </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    M.Sc. Mathematics + B.E. Computer Science (Dual Degree) <p className='degree-duration'>[Aug 2019 - Aug 2024]</p>
+                    Samay: Time-series Foundational Models Library <p className='project-duration'>[Jan 2025 - Jun 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    <em>Birla Institute of Technology and Science, Pilani (Rajasthan, India)</em>
+                    <em>Georgia Institute of Technology, Atlanta (Georgia, United States)</em>
                   </p>
-                  <p style={{ fontSize: '1rem' }}>
-                    <strong>Focus areas:</strong> Graph theory, Graph ML. Responsible AI
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Contributed in the development of <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source time-series library</li>
+                    <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
+                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on GiftEval benchmark</li>
+                    <li>Code repository: [<a className='blog-link' href="https://github.com/AdityaLab/Samay" target="_blank" rel="noopener noreferrer">Github</a>]</li>
+                  </ul>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    Technologies used:
+                    <br />
+                    <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/hf-logo.png" alt="Transformers" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Transformers</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NumPy</span>
+                      </span>
+                    </span>
                   </p>
                 </div>
               </div>

@@ -98,6 +98,28 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
+                    src="/assets/images/ecu-logo.png" 
+                    alt="Edith Cowan University Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Researcher <p className='degree-duration'>[May 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Edith Cowan University <br/> (Western Australia, Australia) [Remote]</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Research in healthcare AI applications</li>
+                    <li>Explainable AI methodologies</li>
+                    <li>Graph machine learning techniques</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
                     src="/assets/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
                   />
