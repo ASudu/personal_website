@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 const Projects: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'projects' | 'publications'>('projects');
+  const [activeTab, setActiveTab] = useState<'agentic' | 'healthcare' | 'foundational' | 'mathematics' | 'publications'>('agentic');
 
   return (
     <Layout title="Projects | Sudarshan Anand" activePage="projects">
@@ -12,10 +12,28 @@ const Projects: React.FC = () => {
         {/* Tab Navigation */}
         <div className="tab-navigation">
           <button
-            className={`tab-btn ${activeTab === 'projects' ? 'active' : ''}`}
-            onClick={() => setActiveTab('projects')}
+            className={`tab-btn ${activeTab === 'agentic' ? 'active' : ''}`}
+            onClick={() => setActiveTab('agentic')}
           >
-            Projects
+            Agentic AI
+          </button>
+          <button
+            className={`tab-btn ${activeTab === 'healthcare' ? 'active' : ''}`}
+            onClick={() => setActiveTab('healthcare')}
+          >
+            Healthcare
+          </button>
+          <button
+            className={`tab-btn ${activeTab === 'foundational' ? 'active' : ''}`}
+            onClick={() => setActiveTab('foundational')}
+          >
+            Foundational Models
+          </button>
+          <button
+            className={`tab-btn ${activeTab === 'mathematics' ? 'active' : ''}`}
+            onClick={() => setActiveTab('mathematics')}
+          >
+            Mathematics
           </button>
           <button
             className={`tab-btn ${activeTab === 'publications' ? 'active' : ''}`}
@@ -27,7 +45,9 @@ const Projects: React.FC = () => {
 
         {/* Tab Content */}
         <div className="tab-content">
-          {activeTab === 'projects' && (
+
+          {/* Agentic AI */}
+          {activeTab === 'agentic' && (
             <div className="projects-section">
 
               {/* Project #1: Enterprise Search  */}
@@ -123,8 +143,59 @@ const Projects: React.FC = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          )}
 
-              {/* Project #3: Samay */}
+          {/* Healthcare */}
+          {activeTab === 'healthcare' && (
+            <div className="projects-section">
+
+              {/* Project: qCT */}
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Lung Nodule Malignancy Risk Evaluation <p className='project-duration'>[Jan 2024 - Jun 2024]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Qure.ai, Bangalore (Karnataka, India)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Evaluated the company's internal lung nodule detection product, applying clinical risk models (e.g., Brock model) to assess malignancy probability based on nodule size, texture, count, volume, and patient data</li>
+                    <li>Fine-tuned the product for optimal pre-deployment performance, improving reliability and clinical readiness</li>
+                    <li>Trained and optimized state-of-the-art CNN architectures (DenseNet, ResNet, etc.) from scratch`` for lung nodule texture classification, enhancing diagnostic accuracy</li>
+                  </ul>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    Technologies used:
+                    <br />
+                    <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/monai-bg-logo.png" alt="MONAI" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>MONAI</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/assets/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NumPy</span>
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Foundational Models */}
+          {activeTab === 'foundational' && (
+            <div className="projects-section">
+
+              {/* Project: Samay */}
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
@@ -134,9 +205,9 @@ const Projects: React.FC = () => {
                     <em>Georgia Institute of Technology, Atlanta (Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Contributed in the development of <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source time-series library</li>
+                    <li>Co-developed <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source python library to train and evaluate time-series foundational models</li>
                     <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
-                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on GiftEval benchmark</li>
+                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on <a className='blog-link' href="https://huggingface.co/spaces/Salesforce/GIFT-Eval" target="_blank" rel="noopener noreferrer">GiftEval</a> benchmark</li>
                     <li>Code repository: [<a className='blog-link' href="https://github.com/AdityaLab/Samay" target="_blank" rel="noopener noreferrer">Github</a>]</li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
@@ -163,20 +234,27 @@ const Projects: React.FC = () => {
                   </p>
                 </div>
               </div>
+            </div>
+          )}
 
-              {/* Project #4: qCT */}
+          {/* Mathematics */}
+          {activeTab === 'mathematics' && (
+            <div className="projects-section">
+
+              {/* Project: Samay */}
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Lung Nodule Malignancy Risk Evaluation <p className='project-duration'>[Jan 2024 - Jun 2024]</p>
+                    Samay: Time-series Foundational Models Library <p className='project-duration'>[Jan 2025 - Jun 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    <em>Qure.ai, Bangalore (Karnataka, India)</em>
+                    <em>Georgia Institute of Technology, Atlanta (Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Evaluated the company's internal lung nodule detection product, applying clinical risk models (e.g., Brock model) to assess malignancy probability based on nodule size, texture, count, volume, and patient data</li>
-                    <li>Fine-tuned the product for optimal pre-deployment performance, improving reliability and clinical readiness</li>
-                    <li>Trained and optimized state-of-the-art CNN architectures (DenseNet, ResNet, etc.) from scratch`` for lung nodule texture classification, enhancing diagnostic accuracy</li>
+                    <li>Contributed in the development of <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source time-series library</li>
+                    <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
+                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on GiftEval benchmark</li>
+                    <li>Code repository: [<a className='blog-link' href="https://github.com/AdityaLab/Samay" target="_blank" rel="noopener noreferrer">Github</a>]</li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     Technologies used:
@@ -187,8 +265,8 @@ const Projects: React.FC = () => {
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/monai-bg-logo.png" alt="MONAI" style={{ height: '30px', marginBottom: '0.2em' }} />
-                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>MONAI</span>
+                        <img src="/assets/images/hf-logo.png" alt="Transformers" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Transformers</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                         <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />

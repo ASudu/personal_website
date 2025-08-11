@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 const Experience: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'education' | 'professional'>('education');
+  const [activeTab, setActiveTab] = useState<'professional' | 'education'>('professional');
 
   return (
     <Layout title="Experience | Sudarshan Anand" activePage="experience">
@@ -12,16 +12,16 @@ const Experience: React.FC = () => {
         {/* Tab Navigation */}
         <div className="tab-navigation">
           <button
-            className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
-            onClick={() => setActiveTab('education')}
-          >
-            Education
-          </button>
-          <button
             className={`tab-btn ${activeTab === 'professional' ? 'active' : ''}`}
             onClick={() => setActiveTab('professional')}
           >
             Professional Experience
+          </button>
+          <button
+            className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
+            onClick={() => setActiveTab('education')}
+          >
+            Education
           </button>
         </div>
 
@@ -85,7 +85,7 @@ const Experience: React.FC = () => {
                     AI Product Development Intern <p className='degree-duration'>[Jun 2025 - present]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    <em>Rezolve AI <br/> (California, United States)</em>
+                    <em>Rezolve AI <br/> (California, United States) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
                     <li>Developed AI-powered product features</li>
@@ -148,7 +148,7 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Graduate Researcher @ AdityaLab <p className='degree-duration'>[Jan 2025 - May 2025]</p>
+                    Graduate Researcher @ AdityaLab <p className='degree-duration'>[Jan 2025 - Jun 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
