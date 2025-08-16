@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 const Experience: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'professional' | 'education'>('professional');
+  const [activeTab, setActiveTab] = useState<'professional' | 'education' | 'volunteer'>('professional');
 
   return (
     <Layout title="Experience | Sudarshan Anand" activePage="experience">
@@ -22,6 +22,12 @@ const Experience: React.FC = () => {
             onClick={() => setActiveTab('education')}
           >
             Education
+          </button>
+          <button
+            className={`tab-btn ${activeTab === 'volunteer' ? 'active' : ''}`}
+            onClick={() => setActiveTab('volunteer')}
+          >
+            Volunteer Experience
           </button>
         </div>
 
@@ -82,7 +88,7 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    AI Product Development Intern <p className='degree-duration'>[Jun 2025 - present]</p>
+                    AI Product Development Intern <p className='degree-duration'>[Jun 2025 - Aug 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Rezolve AI <br/> (California, United States) [Remote]</em>
@@ -178,6 +184,71 @@ const Experience: React.FC = () => {
                     <li>Research in healthcare AI applications</li>
                     <li>Explainable AI methodologies</li>
                     <li>Graph machine learning techniques</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'volunteer' && (
+            <div className="education-section">
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/manning-logo.png" 
+                    alt="Manning Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Manuscript Reviewer <p className='degree-duration'>[Marc 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Manning Publications</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Reviewed the <a className='blog-link' href="https://www.manning.com/books/time-series-forecasting-using-foundation-models" target="_blank" rel="noopener noreferrer">Time Series Forecasting Using Foundation Models</a> Manuscript</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/crac-logo.png" 
+                    alt="CrAC Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Secretary, Creative Activities Club, the art club of BITS Pilani <p className='degree-duration'>[May 2021 - Jul 2022]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Birla Institute of Technology and Science, Pilani (Rajasthan, India)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Led the 50-member club to make large panels and structures, and conduct three events, including an art gallery for the university's annual technical fest APOGEE</li>
+                    <li>Mentored the club members on various art styles and mediums and conducted weekly challenges to keep all club members, including me, in touch with our creative side</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/bits-logo.png" 
+                    alt="BITS Pilani Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Core member, Student Faculty Council - Mathematics Department <p className='degree-duration'>[Sep 2020 - Dec 2020]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Birla Institute of Technology and Science, Pilani (Rajasthan, India)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Part of a team of 5-6 students who are responsible for bringing concerns and issues from the student body to the department faculty to get them resolved</li>
                   </ul>
                 </div>
               </div>
