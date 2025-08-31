@@ -5,7 +5,6 @@ import { useFerrisWheel } from '../hooks/useFerrisWheel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faGraduationCap, faFile, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import sudarshan_profile from '../../public/images/sudarshan_profile.svg';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -145,7 +144,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
               <div className="center-wrapper">
                 <Link to="/">
                   <img 
-                    src={sudarshan_profile}
+                    src="/public/images/sudarshan_profile.svg" 
                     className="center-image" 
                     id="profileImage" 
                     style={{ cursor: 'pointer' }}
