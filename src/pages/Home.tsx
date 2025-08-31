@@ -11,13 +11,15 @@ const Home: React.FC = () => {
           <ul>
             <li>Graduate student at Georgia Tech (M.S. Computational Science and Engineering)</li>
             <br />
-            <li>AI-Product Development Intern at Rezolve.ai</li>
-            <br />        
+            <li>Graduate Researcher at Bio-MIBLab working on Parkinson's Disease Classification using fMRI scans</li>
+            <br />
+            <li>Graduate Teaching Assistant for CSE Algorithms (CSE 6140)</li>
+            <br />     
             <li>Member of Responsible-AI for Decision Making team (Georgia Tech)</li>
             <br />                                          
             <li> <strong>Research Interests:</strong> Healthcare AI, Explainable AI, Graph ML, Statistical modelling</li>
             <br />                      
-            <li><strong>Hobbies:</strong> Sketching, painting, writing poems, badminton, and music</li>
+            <li><strong>Hobbies:</strong> Sketching, painting, photography, writing poems, badminton, and music</li>
           </ul>
         </div>
       </div>

@@ -79,6 +79,47 @@ const Experience: React.FC = () => {
 
           {activeTab === 'professional' && (
             <div className="professional-section">
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Researcher @ Bio-MIBLab <p className='degree-duration'>[Aug 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Working on Parkinson's Disease Diagnosis using functional and structural MRI data</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/assets/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Teaching Assisstant <p className='degree-duration'>[Aug 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>GTA for the CSE algorithms course </li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
@@ -94,9 +135,9 @@ const Experience: React.FC = () => {
                     <em>Rezolve AI <br/> (California, United States) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Developed AI-powered product features</li>
-                    <li>Collaborated with cross-functional teams</li>
-                    <li>Implemented machine learning algorithms</li>
+                    <li>Built an Agentic AI knowledge search platform with explainability, driving rapid, transparent information access and attracting strong client interest</li>
+                    <br />
+                    <li>Developed an Agentic AI prototype for infrastructure alert triage and resolution, embedding explainability and human-in-the-loop workflows, and earned strong interest from top-tier AITSM firms</li>
                   </ul>
                 </div>
               </div>
@@ -116,9 +157,7 @@ const Experience: React.FC = () => {
                     <em>Edith Cowan University <br/> (Western Australia, Australia) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Research in healthcare AI applications</li>
-                    <li>Explainable AI methodologies</li>
-                    <li>Graph machine learning techniques</li>
+                    <li>Conducting a spatio-temporal analysis of the metadata for COVID-19 to assess and visualize trends over time</li>
                   </ul>
                 </div>
               </div>
@@ -138,9 +177,9 @@ const Experience: React.FC = () => {
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Research in healthcare AI applications</li>
-                    <li>Explainable AI methodologies</li>
-                    <li>Graph machine learning techniques</li>
+                    <li>Working in the Responsible AI for Decision Making in Healthcare and Engineering team</li>
+                    <br />
+                    <li>Developing an AI product for whitebox detection in various radiology modalities (CT, MRI, X-ray)</li>
                   </ul>
                 </div>
               </div>
@@ -160,8 +199,11 @@ const Experience: React.FC = () => {
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Developing <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source time-series library</li>
-                    <li>Benchmarking LPTM against other SOTA Time-series foundational models (Chronos, TimesFM, MOIRAI, etc)</li>
+                    <li>Co-developed <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source python library to train and evaluate time-series foundational models</li>
+                    <br />
+                    <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
+                    <br />
+                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on <a className='blog-link' href="https://huggingface.co/spaces/Salesforce/GIFT-Eval" target="_blank" rel="noopener noreferrer">GiftEval</a> benchmark</li>
                   </ul>
                 </div>
               </div>
@@ -181,9 +223,11 @@ const Experience: React.FC = () => {
                     <em>Qure.ai, Bangalore <br/> (Karnataka, India)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Research in healthcare AI applications</li>
-                    <li>Explainable AI methodologies</li>
-                    <li>Graph machine learning techniques</li>
+                    <li>Evaluated the lung nodule detection product using clinical risk models (e.g., Brock model) to approximate malignancy probability based on nodule structural properties, and patient metadata</li>
+                    <br/>
+                    <li>Enhanced AI annotations, achieving a <strong>~45%</strong> improvement in correlation with ground truth</li>
+                    <br/>
+                    <li>Benchmarked image registration speed for lung nodule tracking in consecutive scans.</li>
                   </ul>
                 </div>
               </div>
@@ -201,7 +245,7 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Manuscript Reviewer <p className='degree-duration'>[Marc 2025 - present]</p>
+                    Manuscript Reviewer <p className='degree-duration'>[Mar 2025 - present]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Manning Publications</em>

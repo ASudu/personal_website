@@ -90,7 +90,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
           {/* Subtitle and call-to-action */}
           <div className="hero-subtitle" style={{ textAlign: 'center', marginTop: '0.5rem' }}>
             <span style={{ fontSize: '1.5rem' }}>
-              AI Product Dev Intern | MS CSE @ GT | AI Researcher
+              Graduate Teaching Assistant | MS CSE @ GT | AI Researcher
             </span>
             <br />
             <br />
@@ -167,11 +167,11 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
                     <div className="spoke-line"></div>
                     <Link className="spoke-label" to="/blog">Blog</Link>
                   </div>
-                  
-                  {/* Contact spoke - 36 degrees */}
-                  <div className={`spoke ${activePage === 'contact' ? 'active' : ''}`} data-angle="36" data-page="contact">
+
+                  {/* Fun corner spoke - 36 degrees */}
+                  <div className={`spoke ${activePage === 'fun_corner' ? 'active' : ''}`} data-angle="36" data-page="fun_corner">
                     <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/contact">Contact</Link>
+                    <Link className="spoke-label" to="/fun_corner">Fun corner</Link>
                   </div>
                   
                   {/* Projects spoke - 252 degrees */}
