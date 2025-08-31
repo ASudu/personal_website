@@ -38,7 +38,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/gatech-logo.png" 
+                    src="/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
                   />
                 </div>
@@ -58,7 +58,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/bits-logo.png" 
+                    src="/images/bits-logo.png" 
                     alt="BITS Pilani Logo"
                   />
                 </div>
@@ -83,7 +83,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/gatech-logo.png" 
+                    src="/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
                   />
                 </div>
@@ -103,7 +103,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/gatech-logo.png" 
+                    src="/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
                   />
                 </div>
@@ -123,7 +123,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/rezolve-logo.png" 
+                    src="/images/rezolve-logo.png" 
                     alt="Rezolve AI Logo"
                   />
                 </div>
@@ -145,7 +145,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/ecu-logo.png" 
+                    src="/images/ecu-logo.png" 
                     alt="Edith Cowan University Logo"
                   />
                 </div>
@@ -165,7 +165,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/gatech-logo.png" 
+                    src="/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
                   />
                 </div>
@@ -187,7 +187,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/gatech-logo.png" 
+                    src="/images/gatech-logo.png" 
                     alt="Georgia Tech Logo"
                   />
                 </div>
@@ -211,7 +211,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/qure.ai-logo.png" 
+                    src="/images/qure.ai-logo.png" 
                     alt="Qure.ai Logo"
                   />
                 </div>
@@ -239,7 +239,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/manning-logo.png" 
+                    src="/images/manning-logo.png" 
                     alt="Manning Logo"
                   />
                 </div>
@@ -259,7 +259,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/crac-logo.png" 
+                    src="/images/crac-logo.png" 
                     alt="CrAC Logo"
                   />
                 </div>
@@ -280,7 +280,7 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
-                    src="/assets/images/bits-logo.png" 
+                    src="/images/bits-logo.png" 
                     alt="BITS Pilani Logo"
                   />
                 </div>

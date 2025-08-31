@@ -69,27 +69,27 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/flask-logo.png" alt="Flask" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/flask-logo.png" alt="Flask" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Flask</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/react-logo.png" alt="React" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/react-logo.png" alt="React" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>React</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/vite-logo.png" alt="Vite.js" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/vite-logo.png" alt="Vite.js" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Vite.js</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/neo4j-logo.png" alt="Neo4j" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/neo4j-logo.png" alt="Neo4j" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Neo4j</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/postgre-logo.png" alt="PostgreSQL" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/postgre-logo.png" alt="PostgreSQL" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PostgreSQL</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/gcloud-logo.png" alt="Google Cloud" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/gcloud-logo.png" alt="Google Cloud" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Google Cloud</span>
                       </span>
                     </span>
@@ -116,27 +116,27 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/fastapi-logo.png" alt="FastAPI" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/fastapi-logo.png" alt="FastAPI" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>FastAPI</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/react-logo.png" alt="React" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/react-logo.png" alt="React" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>React</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/ts-logo.png" alt="TypeScript" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/ts-logo.png" alt="TypeScript" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>TypeScript</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/nextjs-logo.png" alt="Next.js" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/nextjs-logo.png" alt="Next.js" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Next.js</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/css-logo.png" alt="CSS3" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/css-logo.png" alt="CSS3" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>CSS3</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/gcloud-logo.png" alt="Google Cloud" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/gcloud-logo.png" alt="Google Cloud" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Google Cloud</span>
                       </span>
                     </span>
@@ -167,19 +167,19 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NumPy</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/plotly-logo.png" alt="Plotly" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/plotly-logo.png" alt="Plotly" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Plotly</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/gcloud-logo.png" alt="Google Cloud" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/gcloud-logo.png" alt="Google Cloud" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Google Cloud</span>
                       </span>
                     </span>
@@ -205,19 +205,19 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pydicom-logo.png" alt="Pydicom" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pydicom-logo.png" alt="Pydicom" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pydicom</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/sklearn-logo.png" alt="Scikit-learn" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/sklearn-logo.png" alt="Scikit-learn" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Scikit-learn</span>
                       </span>
                     </span>
@@ -245,15 +245,15 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/networkx-logo.png" alt="NetworkX" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/networkx-logo.png" alt="NetworkX" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NetworkX</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/scipy-logo.png" alt="SciPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/scipy-logo.png" alt="SciPy" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>SciPy</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
                       </span>
                     </span>
@@ -280,23 +280,23 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pydicom-logo.png" alt="Pydicom" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pydicom-logo.png" alt="Pydicom" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pydicom</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/monai-bg-logo.png" alt="MONAI" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/monai-bg-logo.png" alt="MONAI" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>MONAI</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/sklearn-logo.png" alt="Scikit-learn" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/sklearn-logo.png" alt="Scikit-learn" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Scikit-learn</span>
                       </span>
                     </span>
@@ -330,19 +330,19 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/hf-logo.png" alt="Transformers" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/hf-logo.png" alt="Transformers" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Transformers</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NumPy</span>
                       </span>
                     </span>
@@ -374,7 +374,7 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/matlab-logo.png" alt="MATLAB" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/matlab-logo.png" alt="MATLAB" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>MATLAB</span>
                       </span>
                     </span>
@@ -401,11 +401,11 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/networkx-logo.png" alt="NetworkX" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/networkx-logo.png" alt="NetworkX" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NetworkX</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/matplotlib-logo.png" alt="Matplotlib" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/matplotlib-logo.png" alt="Matplotlib" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Matplotlib</span>
                       </span>
                     </span>
@@ -431,11 +431,11 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/networkx-logo.png" alt="NetworkX" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/networkx-logo.png" alt="NetworkX" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NetworkX</span>
                       </span>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/matplotlib-logo.png" alt="Matplotlib" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/matplotlib-logo.png" alt="Matplotlib" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Matplotlib</span>
                       </span>
                     </span>
@@ -461,7 +461,7 @@ const Projects: React.FC = () => {
                     <br />
                     <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
                       <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                        <img src="/assets/images/matlab-logo.png" alt="MATLAB" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <img src="/images/matlab-logo.png" alt="MATLAB" style={{ height: '30px', marginBottom: '0.2em' }} />
                         <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>MATLAB</span>
                       </span>
                     </span>

@@ -3,22 +3,22 @@ import Layout from '../components/Layout';
 
 const FunCorner: React.FC = () => {
   const artworks = [
-    { src: '/assets/images/artworks/ram_lalla.jpg', alt: 'Ram Lalla' },
-    { src: '/assets/images/artworks/aston_martin.jpg', alt: 'Aston Martin DB11' },
-    { src: '/assets/images/artworks/kanchi.jpg', alt: 'Kanchipuram Varadhar' },
-    { src: '/assets/images/artworks/deadpool.jpg', alt: 'Deadpool' },
-    { src: '/assets/images/artworks/yondu.jpg', alt: 'Yondu' },
-    { src: '/assets/images/artworks/money_heist_professor.jpg', alt: 'Money Heist Professor' },
+    { src: '/images/artworks/ram_lalla.jpg', alt: 'Ram Lalla' },
+    { src: '/images/artworks/aston_martin.jpg', alt: 'Aston Martin DB11' },
+    { src: '/images/artworks/kanchi.jpg', alt: 'Kanchipuram Varadhar' },
+    { src: '/images/artworks/deadpool.jpg', alt: 'Deadpool' },
+    { src: '/images/artworks/yondu.jpg', alt: 'Yondu' },
+    { src: '/images/artworks/money_heist_professor.jpg', alt: 'Money Heist Professor' },
   ];
 
   const photos = [
-    { src: '/assets/images/photos/htal.jpg', alt: 'Hindu Temple of Atlanta' },
-    { src: '/assets/images/photos/bits_tower.jpg', alt: 'Clock tower of BITS' },
-    { src: '/assets/images/photos/manali.jpg', alt: 'Manali scenery' },
-    { src: '/assets/images/photos/sikkim.jpg', alt: 'Sikkim Lake' },
-    { src: '/assets/images/photos/boston.jpg', alt: 'Christian Center of Science' },
-    { src: '/assets/images/photos/high_museum.jpg', alt: 'High Museum of Art' },
-    { src: '/assets/images/photos/midtown.jpg', alt: 'Midtown Atlanta' }
+    { src: '/images/photos/htal.jpg', alt: 'Hindu Temple of Atlanta' },
+    { src: '/images/photos/bits_tower.jpg', alt: 'Clock tower of BITS' },
+    { src: '/images/photos/manali.jpg', alt: 'Manali scenery' },
+    { src: '/images/photos/sikkim.jpg', alt: 'Sikkim Lake' },
+    { src: '/images/photos/boston.jpg', alt: 'Christian Center of Science' },
+    { src: '/images/photos/high_museum.jpg', alt: 'High Museum of Art' },
+    { src: '/images/photos/midtown.jpg', alt: 'Midtown Atlanta' }
   ];
 
   return (
