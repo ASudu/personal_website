@@ -99,7 +99,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
             </span>
           </div>
           <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
-            <a className="contact-btn" href="/assets/files/Sudarshan_Anand_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a className="contact-btn" href="/files/Sudarshan_Anand_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Resume
             </a>
             <a className="contact-btn" href="https://www.linkedin.com/in/sudarshan-anand-360535211/" target="_blank" rel="noopener noreferrer">
