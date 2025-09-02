@@ -17,7 +17,7 @@ const Home: React.FC = () => {
             <br />     
             <li>Member of Responsible-AI for Decision Making team (Georgia Tech)</li>
             <br />                                          
-            <li> <strong>Research Interests:</strong> Healthcare AI, Explainable AI, Graph ML, Statistical modelling</li>
+            <li> <strong>Research Interests:</strong> Medical Imaging, Public Health, Drug discovery, Explainable AI, Graph ML, Statistical modelling</li>
             <br />                      
             <li><strong>Hobbies:</strong> Sketching, painting, photography, writing poems, badminton, and music</li>
           </ul>
