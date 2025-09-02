@@ -95,7 +95,7 @@ const Experience: React.FC = () => {
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Working on Parkinson's Disease Diagnosis using functional and structural MRI data</li>
+                    <li>Developing imaging-based approaches using structural and functional MRI to improve early diagnosis of Parkinson’s disease</li>
                   </ul>
                 </div>
               </div>
@@ -135,9 +135,13 @@ const Experience: React.FC = () => {
                     <em>Rezolve AI <br/> (California, United States) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Built an Agentic AI knowledge search platform with explainability, driving rapid, transparent information access and attracting strong client interest</li>
+                    <li>Built an Agentic AI knowledge search platform, improving enterprise knowledge accessibility and enabling faster information retrieval across teams</li>
                     <br />
-                    <li>Developed an Agentic AI prototype for infrastructure alert triage and resolution, embedding explainability and human-in-the-loop workflows, and earned strong interest from top-tier AITSM firms</li>
+                    <li>Developed an Agentic AI prototype for infrastructure alert triage and resolution, reducing alert handling times from weeks to hours</li>
+                    <br />
+                    <li>Implemented human-in-the-loop and model-reasoning workflows to ensure responsible AI practices</li>
+                    <br />
+                    <li>Generated strong interest from potential clients and leading market research firms for both products</li>
                   </ul>
                 </div>
               </div>
@@ -157,7 +161,7 @@ const Experience: React.FC = () => {
                     <em>Edith Cowan University <br/> (Western Australia, Australia) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Conducting a spatio-temporal analysis of the metadata for COVID-19 to assess and visualize trends over time</li>
+                    <li>Investigating COVID-19 metadata to identify temporal patterns and emphasize its significance for early pandemic prediction</li>
                   </ul>
                 </div>
               </div>
@@ -177,9 +181,9 @@ const Experience: React.FC = () => {
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Working in the Responsible AI for Decision Making in Healthcare and Engineering team</li>
+                    <li>Developing a Responsible AI framework for chest X-ray disease classification</li>
                     <br />
-                    <li>Developing an AI product for whitebox detection in various radiology modalities (CT, MRI, X-ray)</li>
+                    <li>Benchmarked state-of-the-art vision classification models in lung abnormality classification (normal vs opacity vs no opacity/not normal)</li>
                   </ul>
                 </div>
               </div>
