@@ -102,7 +102,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
             <a className="contact-btn" href="/files/Sudarshan_Anand_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Resume
             </a>
-            <a className="contact-btn" href="https://www.linkedin.com/in/sudarshan-anand-360535211/" target="_blank" rel="noopener noreferrer">
+            <a className="contact-btn" href="https://www.linkedin.com/in/sanand315/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} style={{ verticalAlign: 'middle', scale: '1.2' }}/> LinkedIn
             </a>
             <a className="contact-btn" href="https://scholar.google.com/citations?user=0hOXk24AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
