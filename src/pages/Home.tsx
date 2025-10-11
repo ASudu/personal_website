@@ -9,6 +9,8 @@ const Home: React.FC = () => {
 
         <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
           <ul>
+            <li><strong>IEEE BHI 2025 Young Professional NextGen Scholar (NSF, EMBS, Google Sponsored)</strong></li>
+            <br />
             <li>Graduate student at Georgia Tech (M.S. Computational Science and Engineering)</li>
             <br />
             <li>Graduate Researcher at Bio-MIBLab working on Parkinson's Disease Classification using fMRI scans</li>
