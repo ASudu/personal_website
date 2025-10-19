@@ -13,11 +13,9 @@ const Home: React.FC = () => {
             <br />
             <li>Graduate student at Georgia Tech (M.S. Computational Science and Engineering)</li>
             <br />
-            <li>Graduate Researcher at Bio-MIBLab working on Parkinson's Disease Classification using fMRI scans</li>
+            <li>Graduate Researcher at Bio-MIBLab working on Multimodal Progression Tracking for Neurodegenerative Diseases</li>
             <br />
             <li>Graduate Teaching Assistant for CSE Algorithms (CSE 6140)</li>
-            <br />     
-            <li>Member of Responsible-AI for Decision Making team (Georgia Tech)</li>
             <br />                                          
             <li> <strong>Research Interests:</strong><br/>
               Medical Imaging, Public Health, Drug discovery, Graph ML

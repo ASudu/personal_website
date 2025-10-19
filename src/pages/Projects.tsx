@@ -60,8 +60,10 @@ const Projects: React.FC = () => {
                     <em>Rezolve AI (California, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Co-developed an Agentic AI-powered knowledge search platform enabling employees to retrieve information with speed and precision</li>
-                    <li>Integrated explainability features to ensure transparency and trust in AI-driven recommendations</li>
+                    <li>Launched as <a className='blog-link' href="https://www.rezolve.ai/rezolve-searchiq-ai-enterprise-search" target="_blank" rel="noopener noreferrer">SearchIQ</a></li>
+                    <li>Co-led the end-to-end development of an Agentic AI knowledge search platform, enabling employees to retrieve mission-critical information with precision and reducing search time to under <strong>20 seconds</strong></li>
+                    <li>Architected the solution to meet stringent functional and non-functional requirements, ensuring a robust and scalable enterprise product pipeline</li>
+                    <li>Secured AI Trust and Oversight by implementing Explainability (XAI) principles and Human-in-the-Loop (HITL) governance standards throughout the deployment process</li>
                     <li>Presented the solution to potential clients and leading market research firms, earning strong positive feedback and interest</li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
@@ -107,9 +109,9 @@ const Projects: React.FC = () => {
                     <em>Rezolve AI (California, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Built a prototype Agentic AI product to log, classify, triage, and generate resolution plans for infrastructure alerts using historical data</li>
-                    <li>Integrated explainability principles and human-in-the-loop workflows to ensure trust and oversight</li>
-                    <li>Showcased the prototype to potential clients, impressing top-tier tech companies in the AITSM domain</li>
+                    <li>Pioneered an Agentic AI solution for AITSM, automating critical infrastructure alert response and resolution planning</li>
+                    <li>Ensured AI trust and oversight by implementing explainability principles and Human-in-the-Loop governance</li>
+                    <li>Drove critical business momentum by showcasing the high-impact prototype to potential clients, securing favorable reception and impressing top-tier technology companies within the competitive AITSM domain</li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     Technologies used:
@@ -160,7 +162,8 @@ const Projects: React.FC = () => {
                     <em>Edith Cowan University (Western Australia, Australia) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Conducting a spatio-temporal analysis of the metadata for COVID-19 to assess and visualize trends over time</li>
+                    <li>Driving equitable data access and strategic public health policy through ongoing analysis of COVID-19 patient de-identified data and genomic data, identifying critical metadata gaps and informing new data-sharing protocols</li>
+                    <li>Presenting poster titled <strong>Metadata makes Big Data useful for AI/ML-ready, equitable pandemic response</strong> at the <a className='blog-link' href="https://bhi.embs.org/2025/" target="_blank" rel="noopener noreferrer">IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI'25)</a></li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     Technologies used:
@@ -271,9 +274,9 @@ const Projects: React.FC = () => {
                     <em>Qure.ai, Bangalore (Karnataka, India)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Evaluated the company's internal lung nodule detection product, applying clinical risk models (e.g., Brock model) to assess malignancy probability based on nodule size, texture, count, volume, and patient data</li>
-                    <li>Fine-tuned the product for optimal pre-deployment performance, improving reliability and clinical readiness</li>
-                    <li>Trained and optimized state-of-the-art CNN architectures (DenseNet, ResNet, etc.) from scratch`` for lung nodule texture classification, enhancing diagnostic accuracy</li>
+                    <li>Evaluated the company's lung nodule detection product against human radiologist annotations</li>
+                    <li>Optimized the product's pre-deployment performance, improving AI correlation by <strong>≈45%</strong> and enhancing clinical reliability</li>
+                    <li>Performed end-to-end fine-tuning of state-of-the-art CNN architectures (DenseNet, ResNet, etc.) for lung nodule texture classification, boosting diagnostic accuracy</li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     Technologies used:
@@ -473,6 +476,30 @@ const Projects: React.FC = () => {
 
           {activeTab === 'publications' && (
             <div className="publications-section">
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Metadata makes Big Data useful for AI/ML-ready, equitable pandemic response <p className='project-duration'>[Sept 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI'25), Sept 2025</em>
+                  </p>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <strong>Authors:</strong> <strong>Sudarshan Anand</strong>, Miae Lee and Seshadri S. Vasan
+                  </p>
+                  <p style={{ fontSize: '1.2rem' }}>
+                    [<a 
+                    className='blog-link'
+                    href="https://openreview.net/forum?id=MYlJfTsDpi" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                    abstract
+                    </a>]
+                  </p>
+                </div>
+              </div>
+              
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>

@@ -90,7 +90,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
           {/* Subtitle and call-to-action */}
           <div className="hero-subtitle" style={{ textAlign: 'center', marginTop: '0.5rem' }}>
             <span style={{ fontSize: '1.5rem' }}>
-              Graduate Teaching Assistant | MS CSE @ GT | AI Researcher
+              NSF-EMBS-Google NextGen Scholar | Graduate Teaching Assistant | MS CSE @ GT | AI Researcher
             </span>
             <br />
             <br />
@@ -99,8 +99,8 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
             </span>
           </div>
           <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
-            <a className="contact-btn" href="/files/Sudarshan_Anand_CV_Oct_2025.pdf" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> CV
+            <a className="contact-btn" href="/files/Sudarshan_Anand_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Resume
             </a>
             <a className="contact-btn" href="https://www.linkedin.com/in/sanand315/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} style={{ verticalAlign: 'middle', scale: '1.2' }}/> LinkedIn
