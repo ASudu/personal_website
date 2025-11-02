@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         <div className="scrollable-container" tabIndex={0}>
           <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
             <ul>
-              <li><strong>Oct 2025:</strong> IEEE BHI 2025 Data Competition Champion! 🎉🎉</li>
+              <li><strong>Oct 2025: 🎉 IEEE BHI 2025 Data Competition Champions! 🎉</strong></li>
               <br />
               <li><strong>Sept 2025:</strong> Recognized as IEEE BHI 2025 Young Professional NextGen Scholar (NSF, EMBS, Google Sponsored) 🌟🌟</li>
               <br />
