@@ -152,6 +152,46 @@ const Projects: React.FC = () => {
           {activeTab === 'healthcare' && (
             <div className="projects-section">
 
+              {/* Project: BHI Data Competition */}
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    DRiP: White-box framework for Depression Risk Prediction <p className='project-duration'>[Oct 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology, Atlanta  (Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Developed a white-box predictive modeling framework designed to achieve both interpretability and accuracy in forecasting depression risk trajectories</li>
+                    <li>Utilized post-hoc interpretability methods to tie model predictions to clinical features</li>
+                    <li><strong>Awarded 1st place in the Data competition at the <a className='blog-link' href="https://bhi.embs.org/2025/" target="_blank" rel="noopener noreferrer">IEEE-EMBS International Conference on Biomedical and Health Informatics (BHI'25)</a></strong></li>
+                    <li>Refer our final presentation for more details: <a className='blog-link' href="https://docs.google.com/presentation/d/190kzEOiFaCnm2XHJRDECUGtTaQ7cz2kwBxHf3dLBy88/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Team VYSSION BHI'25 Presentation</a></li>
+                  </ul>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    Technologies used:
+                    <br />
+                    <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/pandas-logo.png" alt="Pandas" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Pandas</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/numpy-logo.png" alt="NumPy" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>NumPy</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/sklearn-logo.png" alt="Scikit-learn" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Scikit-learn</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/SDV-logo.png" alt="SDV" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Synthetic Data Vault</span>
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              
               {/* Project: EpiCoV */}
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
