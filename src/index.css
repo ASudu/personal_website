@@ -36,6 +36,9 @@
   
   --btn-bg-light: #01171f;
   --btn-bg-dark: #7ffff9;
+
+  --news-bg-light: rgba(179, 199, 254, 0.6);
+  --news-bg-dark: rgba(0, 42, 50, 0.6);
 }
 
 /* ───────── Base with Fixed Background ───────── */
@@ -64,6 +67,7 @@ body {
   --theme-btn-bg: var(--btn-bg-light);
   --theme-link-color: var(--link-light);
   --theme-hover-link-color: var(--hover-link-light);
+  --theme-news-bg: var(--news-bg-light);
 }
 
 /* Make sure the root container allows scrolling */
@@ -86,6 +90,7 @@ body.dark-mode {
   --theme-btn-bg: var(--btn-bg-dark);
   --theme-link-color: var(--link-dark);
   --theme-hover-link-color: var(--hover-link-dark);
+  --theme-news-bg: var(--news-bg-dark);
 }
 
 /* ───────── Theme Toggle Button ───────── */
@@ -121,6 +126,45 @@ body.dark-mode {
   stroke: var(--theme-icon-color);
   stroke-width: 2px;
   transition: stroke 0.3s ease;
+}
+
+/* ───────── News Section ───────── */
+/* scrollable inner container */
+.scrollable-container {
+  /* make container scrollable by forcing a height */
+  max-height: 40vh;            /* adjust as needed */
+  height: 20vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem;      /* avoid content clipping under scrollbar */
+  -webkit-overflow-scrolling: touch;
+  border-radius: 8px;
+  background: var(--theme-news-bg);
+  backdrop-filter: blur(10px);
+}
+
+/* visible focus for keyboard users */
+.scrollable-container:focus {
+  outline: 2px solid var(--theme-accent-color);
+  outline-offset: 2px;
+}
+
+/* WebKit (Chrome, Safari) scrollbar styling */
+.scrollable-container::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: var(--theme-accent-color);
+  border-radius: 8px;
+}
+.scrollable-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Firefox scrollbar */
+.scrollable-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-btn-bg) transparent;
 }
 
 /* ───────── Hero Section - Transparent Background ───────── */

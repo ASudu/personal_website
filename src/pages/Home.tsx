@@ -9,7 +9,6 @@ const Home: React.FC = () => {
 
         <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
           <ul>
-            <li><strong>IEEE BHI 2025 Young Professional NextGen Scholar (NSF, EMBS, Google Sponsored)</strong></li>
             <br />
             <li>Graduate student at Georgia Tech (M.S. Computational Science and Engineering)</li>
             <br />
@@ -25,6 +24,26 @@ const Home: React.FC = () => {
                 Sketching, Painting, Photography, Writing poems, Badminton, Music
             </li>
           </ul>
+        </div>
+
+        <h4>News</h4>
+
+        <div className="scrollable-container" tabIndex={0}>
+          <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
+            <ul>
+              <li><strong>Oct 2025:</strong> IEEE BHI 2025 Data Competition Champion! 🎉🎉</li>
+              <br />
+              <li><strong>Sept 2025:</strong> Recognized as IEEE BHI 2025 Young Professional NextGen Scholar (NSF, EMBS, Google Sponsored) 🌟🌟</li>
+              <br />
+              <li><strong>Sept 2025:</strong> Abstract titled <strong>"Metadata makes Big Data useful for AI/ML-ready, equitable pandemic response"</strong> accepted for Poster presentation at IEEE BHI 2025 🎉🎉</li>
+              <br />
+              <li><strong>Aug 2025:</strong> Completed an amazing Summer Internship at <a className='blog-link' href="https://www.rezolve.ai/" target="_blank" rel="noopener noreferrer">Rezolve.ai</a> as a AI Product Developer Intern</li>
+              <br />
+              <li><strong>June 2025:</strong> Started Summer Internship at <a className='blog-link' href="https://www.rezolve.ai/" target="_blank" rel="noopener noreferrer">Rezolve.ai</a> as AI Product Developer Intern.</li>
+              <br />
+
+            </ul>
+          </div>
         </div>
       </div>
     </Layout>
