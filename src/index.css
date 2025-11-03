@@ -133,7 +133,7 @@ body.dark-mode {
 .scrollable-container {
   /* make container scrollable by forcing a height */
   max-height: 40vh;            /* adjust as needed */
-  height: 20vh;
+  height: 30vh;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 0.5rem;      /* avoid content clipping under scrollbar */

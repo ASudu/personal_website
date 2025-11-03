@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         <div className="scrollable-container" tabIndex={0}>
           <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
             <ul>
-              <li><strong>Oct 2025: 🎉 Won the first place in <a className='blog-link' href="https://bhi.embs.org/2025/data-competition/" target="_blank" rel="noopener noreferrer">IEEE BHI 2025 Data Challenge Competition</a> (Track 1: Depression Risk Prediction)! 🎉</strong></li>
+              <li><strong>Oct 2025:</strong> 🎉 Won the first place in <a className='blog-link' href="https://bhi.embs.org/2025/data-competition/" target="_blank" rel="noopener noreferrer">IEEE BHI 2025 Data Challenge Competition</a> (Track 1: Depression Risk Prediction)! 🎉</li>
               <br />
               <li><strong>Sept 2025:</strong> Recognized as <a className='blog-link' href="https://bhi.embs.org/2025/registration-2/nsf-embs-google-sponsored-young-professional-nextgen-scholar-recognition/" target="_blank" rel="noopener noreferrer">IEEE BHI 2025 Young Professional NextGen Scholar</a> (NSF, EMBS, Google Sponsored) 🌟🌟</li>
               <br />
