@@ -31,11 +31,11 @@ const Home: React.FC = () => {
         <div className="scrollable-container" tabIndex={0}>
           <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
             <ul>
-              <li><strong>Oct 2025: 🎉 IEEE BHI 2025 Data Competition Champions! 🎉</strong></li>
+              <li><strong>Oct 2025: 🎉 Won the first place in <a className='blog-link' href="https://bhi.embs.org/2025/data-competition/" target="_blank" rel="noopener noreferrer">IEEE BHI 2025 Data Challenge Competition</a> (Track 1: Depression Risk Prediction)! 🎉</strong></li>
               <br />
-              <li><strong>Sept 2025:</strong> Recognized as IEEE BHI 2025 Young Professional NextGen Scholar (NSF, EMBS, Google Sponsored) 🌟🌟</li>
+              <li><strong>Sept 2025:</strong> Recognized as <a className='blog-link' href="https://bhi.embs.org/2025/registration-2/nsf-embs-google-sponsored-young-professional-nextgen-scholar-recognition/" target="_blank" rel="noopener noreferrer">IEEE BHI 2025 Young Professional NextGen Scholar</a> (NSF, EMBS, Google Sponsored) 🌟🌟</li>
               <br />
-              <li><strong>Sept 2025:</strong> Abstract titled <strong>"Metadata makes Big Data useful for AI/ML-ready, equitable pandemic response"</strong> accepted for Poster presentation at IEEE BHI 2025 🎉🎉</li>
+              <li><strong>Sept 2025:</strong> Our poster got accepted at IEEE BHI 2025. Check out the abstract: <a className='blog-link' href="https://openreview.net/forum?id=MYlJfTsDpi" target="_blank" rel="noopener noreferrer">Metadata makes Big Data useful for AI/ML-ready, equitable pandemic response</a>  🎉🎉</li>
               <br />
               <li><strong>Aug 2025:</strong> Completed an amazing Summer Internship at <a className='blog-link' href="https://www.rezolve.ai/" target="_blank" rel="noopener noreferrer">Rezolve.ai</a> as a AI Product Developer Intern</li>
               <br />
