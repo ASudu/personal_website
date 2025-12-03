@@ -31,7 +31,7 @@ const Home: React.FC = () => {
         <div className="scrollable-container" tabIndex={0}>
           <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
             <ul>
-              <li><strong>Nov 2025:</strong> Acknowledged in Manning's <a className='blog-link' href="https://www.manning.com/books/time-series-forecasting-using-foundation-models" target="_blank" rel="noopener noreferrer">Time Series Forecasting Using Foundation Models</a> for my technical review 🎉🎉</li>
+              <li><strong>Nov 2025:</strong> <a className='blog-link' href="/images/Time_series_forecasting_book_ack_1.png" target="_blank" rel="noopener noreferrer">Acknowledged</a> in Manning's <a className='blog-link' href="https://www.manning.com/books/time-series-forecasting-using-foundation-models" target="_blank" rel="noopener noreferrer">Time Series Forecasting Using Foundation Models</a> for my technical review 🎉🎉</li>
               <br />
               <li><strong>Oct 2025:</strong> 🎉 Won the first place in <a className='blog-link' href="https://bhi.embs.org/2025/data-competition/" target="_blank" rel="noopener noreferrer">IEEE BHI 2025 Data Challenge Competition</a> (Track 1: Depression Risk Prediction)! 🎉</li>
               <br />
