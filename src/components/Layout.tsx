@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useFerrisWheel } from '../hooks/useFerrisWheel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faGraduationCap, faFile, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -110,6 +110,9 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
             </a>
             <a className="contact-btn" href="https://github.com/ASudu" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} style={{ verticalAlign: 'middle', scale: '1.2' }} /> GitHub
+            </a>
+            <a className="contact-btn" href="https://www.instagram.com/through_sa_lens?igsh=YzRkN250aXUyYXJ3" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Instagram
             </a>
           </div> 
           {/* Button to scroll to main content */}
