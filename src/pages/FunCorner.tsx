@@ -94,6 +94,8 @@ const FunCorner: React.FC = () => {
             </div>
           ))}
         </div>
+
+        For more such content, visit my Instagram page: <a className='blog-link' href="https://www.instagram.com/through_sa_lens?igsh=YzRkN250aXUyYXJ3" target="_blank" rel="noopener noreferrer">@through_sa_lens</a>
       </div>
     </Layout>
   );
