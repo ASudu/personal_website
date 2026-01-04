@@ -539,6 +539,30 @@ const Projects: React.FC = () => {
                   </p>
                 </div>
               </div>
+
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Why de-identified patient meta-data matters during pandemics <p className='project-duration'>[Sept 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Scotland's Health Research and Innovation Conference, Sept 2025</em>
+                  </p>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <strong>Authors:</strong> <strong>Sudarshan Anand</strong>, Miae Lee and Seshadri S. Vasan
+                  </p>
+                  <p style={{ fontSize: '1.2rem' }}>
+                    [<a 
+                    className='blog-link'
+                    href="https://api.ltb.io/show/ACMRT" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    >
+                    virtual poster
+                    </a>]
+                  </p>
+                </div>
+              </div>
               
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
