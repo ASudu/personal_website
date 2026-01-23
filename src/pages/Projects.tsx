@@ -353,9 +353,47 @@ const Projects: React.FC = () => {
           {activeTab === 'foundational' && (
             <div className="projects-section">
 
+              {/* Project: Red-teaming challenge (OpenAI) */}
+              <div className="project-item">
+                <div className="education-details" style={{ flex: 1 }}>
+                  {/* Samay */}
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Red-Teaming Challenge - OpenAI gpt-oss-20b <p className='project-duration'>[Aug 2025 - Aug 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology, Atlanta (Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
+                    <li>Participated in <a className='blog-link' href="https://www.kaggle.com/c/openai-gpt-oss-20b-red-teaming" target="_blank" rel="noopener noreferrer">OpenAI's Kaggle Hackathon</a>, involved testing vulnerabilities of its new open-source reasoning model gpt-oss-20b</li>
+                    <li>Used techniques such as Oblique prompting to test model robustness against malicious prompts. Tested other aspects such as reward-hacking and improper tool use</li>
+                    <li>Showcased vulnerabilities in model behavior and provided detailed reports to the OpenAI team via Kaggle writeup</li>
+                    <li>Detailed writeup: [<a className='blog-link' href="https://kaggle.com/competitions/openai-gpt-oss-20b-red-teaming/writeups/stress-testing-gpt-oss-20b" target="_blank" rel="noopener noreferrer">Kaggle</a>]</li>
+                  </ul>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    Technologies used:
+                    <br />
+                    <span style={{ display: 'inline-flex', gap: '1.5em', marginTop: '0.5em' }}>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/pytorch-logo.png" alt="PyTorch" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>PyTorch</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/hf-logo.png" alt="Transformers" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Transformers</span>
+                      </span>
+                      <span style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                        <img src="/images/kaggle-logo.png" alt="Kaggle" style={{ height: '30px', marginBottom: '0.2em' }} />
+                        <span style={{ fontSize: '0.95em', marginTop: '0.1em' }}>Kaggle</span>
+                      </span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
               {/* Project: Samay */}
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
+                  {/* Samay */}
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
                     Samay: Time-series Foundational Models Library <p className='project-duration'>[Jan 2025 - Jun 2025]</p>
                   </h4>

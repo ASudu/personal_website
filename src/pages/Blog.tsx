@@ -11,12 +11,13 @@ const Blog: React.FC = () => {
           <article>
             <h4 style={{ fontSize: '1.2rem' }}>Artificial Intelligence</h4>
             <ul style={{ lineHeight: '2' }}>
+              {/* Mixture of Experts */}
               <li style={{ fontSize: '1rem' }}>
-              Alphageometry{' '}
+              Scaling Smart, Not Hard: An Introduction to Mixture of Experts{' '}
               <span style={{ fontSize: '0.9rem' }}>
                 [<a 
                 className='blog-link'
-                href="https://www.linkedin.com/pulse/alphageometry-sudarshan-anand-1u9nc/?trackingId=T8%2FZcQmAS3upeoSy8zaaeQ%3D%3D" 
+                href="https://open.substack.com/pub/sudarshananand/p/scaling-smart-not-hard-an-introduction?utm_campaign=post-expanded-share&utm_medium=web" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 >
@@ -24,19 +25,8 @@ const Blog: React.FC = () => {
                 </a>]
               </span>
               </li>
-              <li style={{ fontSize: '1rem' }}>
-              Epidemiology: How AI is changing the game?{' '}
-              <span style={{ fontSize: '0.9rem' }}>
-                [<a 
-                className='blog-link'
-                href="https://www.linkedin.com/pulse/epidemiology-how-ai-changing-game-sudarshan-anand-ci5uc/?trackingId=o%2BcjJXfUTjCTJe5zshZHVA%3D%3D" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                >
-                article
-                </a>]
-              </span>
-              </li>
+              
+              {/* I-JEPA */}
               <li style={{ fontSize: '1rem' }}>
               Can AI see like humans?{' '}
               <span style={{ fontSize: '0.9rem' }}>
@@ -50,10 +40,41 @@ const Blog: React.FC = () => {
                 </a>]
               </span>
               </li>
+
+              {/* Epidemiology */}
+              <li style={{ fontSize: '1rem' }}>
+              Epidemiology: How AI is changing the game?{' '}
+              <span style={{ fontSize: '0.9rem' }}>
+                [<a 
+                className='blog-link'
+                href="https://www.linkedin.com/pulse/epidemiology-how-ai-changing-game-sudarshan-anand-ci5uc/?trackingId=o%2BcjJXfUTjCTJe5zshZHVA%3D%3D" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                article
+                </a>]
+              </span>
+              </li>
+
+              {/* Alphageometry */}
+              <li style={{ fontSize: '1rem' }}>
+              Alphageometry{' '}
+              <span style={{ fontSize: '0.9rem' }}>
+                [<a 
+                className='blog-link'
+                href="https://www.linkedin.com/pulse/alphageometry-sudarshan-anand-1u9nc/?trackingId=T8%2FZcQmAS3upeoSy8zaaeQ%3D%3D" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                article
+                </a>]
+              </span>
+              </li>
             </ul>
 
             <h4 style={{ fontSize: '1.2rem' }}>Mathematics</h4>
             <ul style={{ lineHeight: '2' }}>
+              {/* Graph */}
               <li style={{ fontSize: '1rem' }}>
               Graph is not a graph{' '}
               <span style={{ fontSize: '0.9rem' }}>
