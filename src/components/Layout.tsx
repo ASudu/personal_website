@@ -95,7 +95,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
             <br />
             <br />
             <span style={{ fontSize: '1.2rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              <FontAwesomeIcon icon={faEnvelope} style={{ verticalAlign: 'middle' }} /><a href="mailto:sanand315@gatech.edu" className='blog-link' style={{ verticalAlign: 'middle' }}>sanand315@gatech.edu</a>  |  <FontAwesomeIcon icon={faLocationDot} style={{ verticalAlign: 'middle' }} />Atlanta, GA
+              <FontAwesomeIcon icon={faEnvelope} style={{ verticalAlign: 'middle' }} /><a href="mailto:asudarshan14@gmail.com" className='blog-link' style={{ verticalAlign: 'middle' }}>asudarshan14@gmail.com</a>  |  <FontAwesomeIcon icon={faLocationDot} style={{ verticalAlign: 'middle' }} />Atlanta, GA
             </span>
           </div>
           <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
