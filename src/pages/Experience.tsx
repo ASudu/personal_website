@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../components/Layout';
 
 const Experience: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'professional' | 'education' | 'volunteer'>('professional');
+  const [activeTab, setActiveTab] = useState<'academic' | 'professional' | 'leader' | 'education' | 'volunteer'>('academic');
 
   return (
     <Layout title="Experience | Sudarshan Anand" activePage="experience">
@@ -11,23 +11,40 @@ const Experience: React.FC = () => {
         
         {/* Tab Navigation */}
         <div className="tab-navigation">
+          
+          <button
+            className={`tab-btn ${activeTab === 'academic' ? 'active' : ''}`}
+            onClick={() => setActiveTab('academic')}
+          >
+            Academic 
+          </button>
+          
           <button
             className={`tab-btn ${activeTab === 'professional' ? 'active' : ''}`}
             onClick={() => setActiveTab('professional')}
           >
-            Professional Experience
+            Professional
           </button>
+
+          <button
+            className={`tab-btn ${activeTab === 'leader' ? 'active' : ''}`}
+            onClick={() => setActiveTab('leader')}
+          >
+            Leadership
+          </button>
+
+          <button
+            className={`tab-btn ${activeTab === 'volunteer' ? 'active' : ''}`}
+            onClick={() => setActiveTab('volunteer')}
+          >
+            Volunteer
+          </button>
+
           <button
             className={`tab-btn ${activeTab === 'education' ? 'active' : ''}`}
             onClick={() => setActiveTab('education')}
           >
             Education
-          </button>
-          <button
-            className={`tab-btn ${activeTab === 'volunteer' ? 'active' : ''}`}
-            onClick={() => setActiveTab('volunteer')}
-          >
-            Volunteer Experience
           </button>
         </div>
 
@@ -77,9 +94,8 @@ const Experience: React.FC = () => {
             </div>
           )}
 
-          {activeTab === 'professional' && (
-            <div className="professional-section">
-
+          {activeTab === 'academic' && (
+            <div className="academic-section">
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
@@ -96,52 +112,6 @@ const Experience: React.FC = () => {
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
                     <li>Developing imaging-based approaches using structural and functional MRI to improve early diagnosis of Parkinson’s disease</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="experience-item">
-                <div className="org-logo">
-                  <img 
-                    src="/images/gatech-logo.png" 
-                    alt="Georgia Tech Logo"
-                  />
-                </div>
-                <div className="education-details" style={{ flex: 1 }}>
-                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Graduate Teaching Assisstant <p className='degree-duration'>[Aug 2025 - present]</p>
-                  </h4>
-                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
-                  </p>
-                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>GTA for the CSE algorithms course </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="experience-item">
-                <div className="org-logo">
-                  <img 
-                    src="/images/rezolve-logo.png" 
-                    alt="Rezolve AI Logo"
-                  />
-                </div>
-                <div className="education-details" style={{ flex: 1 }}>
-                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    AI Product Development Intern <p className='degree-duration'>[Jun 2025 - Aug 2025]</p>
-                  </h4>
-                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
-                    <em>Rezolve AI <br/> (California, United States) [Remote]</em>
-                  </p>
-                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Built an Agentic AI knowledge search platform, improving enterprise knowledge accessibility and enabling faster information retrieval across teams</li>
-                    <br />
-                    <li>Developed an Agentic AI prototype for infrastructure alert triage and resolution, reducing alert handling times from weeks to hours</li>
-                    <br />
-                    <li>Implemented human-in-the-loop and model-reasoning workflows to ensure responsible AI practices</li>
-                    <br />
-                    <li>Generated strong interest from potential clients and leading market research firms for both products</li>
                   </ul>
                 </div>
               </div>
@@ -175,15 +145,41 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Graduate Researcher @ Responsible-AI for Decision Making <p className='degree-duration'>[Jan 2025 - present]</p>
+                    Graduate Researcher @ AdityaLab <p className='degree-duration'>[Jan 2025 - Jun 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Developing a Responsible AI framework for chest X-ray disease classification</li>
+                    <li>Co-developed <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source python library to train and evaluate time-series foundational models</li>
                     <br />
-                    <li>Benchmarked state-of-the-art vision classification models in lung abnormality classification (normal vs opacity vs no opacity/not normal)</li>
+                    <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
+                    <br />
+                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on <a className='blog-link' href="https://huggingface.co/spaces/Salesforce/GIFT-Eval" target="_blank" rel="noopener noreferrer">GiftEval</a> benchmark</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'leader' && (
+            <div className="leader-section">
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Teaching Assisstant <p className='degree-duration'>[Jan 2026 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>GTA for the Numerical Linear Algebra course </li>
                   </ul>
                 </div>
               </div>
@@ -197,17 +193,66 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Graduate Researcher @ AdityaLab <p className='degree-duration'>[Jan 2025 - Jun 2025]</p>
+                    Graduate Teaching Assisstant <p className='degree-duration'>[Aug 2025 - Dec 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Co-developed <a className='blog-link' href="https://www.linkedin.com/posts/sudarshan-anand-360535211_github-adityalabsamay-activity-7320283839988203520--RJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADWmYrgBzrqoeFrdHGaznPlKicAd2FLZMeY" target="_blank" rel="noopener noreferrer">Samay</a>, an open-source python library to train and evaluate time-series foundational models</li>
+                    <li>GTA for the CSE algorithms course </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/images/gatech-logo.png" 
+                    alt="Georgia Tech Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    Graduate Research Leader @ Responsible-AI for Decision Making <p className='degree-duration'>[Jan 2025 - present]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Leading a 10-person research team in the development of a <strong>Responsible AI framework for chest X-ray classification</strong></li>
                     <br />
-                    <li>Finetuned MOIRAI and other SOTA Time-series foundational models</li>
+                    <li>Evaluating uncertainty quantification techniques to enhance the transparency and clinical relevance of our framework</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'professional' && (
+            <div className="professional-section">
+
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
+                    src="/images/rezolve-logo.png" 
+                    alt="Rezolve AI Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    AI Product Development Intern <p className='degree-duration'>[Jun 2025 - Aug 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Rezolve AI <br/> (California, United States) [Remote]</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Built an Agentic AI knowledge search platform, improving enterprise knowledge accessibility and enabling faster information retrieval across teams</li>
                     <br />
-                    <li>Benchmarked zero-shot and finetuned models for time-series forecasting on <a className='blog-link' href="https://huggingface.co/spaces/Salesforce/GIFT-Eval" target="_blank" rel="noopener noreferrer">GiftEval</a> benchmark</li>
+                    <li>Developed an Agentic AI prototype for infrastructure alert triage and resolution, reducing alert handling times from weeks to hours</li>
+                    <br />
+                    <li>Implemented human-in-the-loop and model-reasoning workflows to ensure responsible AI practices</li>
+                    <br />
+                    <li>Generated strong interest from potential clients and leading market research firms for both products</li>
                   </ul>
                 </div>
               </div>
