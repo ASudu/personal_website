@@ -147,7 +147,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
               <div className="center-wrapper">
                 <Link to="/">
                   <img 
-                    src="/images/Sudarshan_Anand1.jpg" 
+                    src="/images/sudarshan_profile.svg" 
                     className="center-image" 
                     id="profileImage" 
                     style={{ cursor: 'pointer' }}
