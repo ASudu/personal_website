@@ -147,7 +147,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
               <div className="center-wrapper">
                 <Link to="/">
                   <img 
-                    src="/images/sudarshan_profile.svg" 
+                    src="/images/Sudarshan_Anand1.jpg" 
                     className="center-image" 
                     id="profileImage" 
                     style={{ cursor: 'pointer' }}
@@ -198,7 +198,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
       {/* Footer */}
       <footer>
         <p style={{ fontSize: '0.75rem', justifyContent: 'center' }}>
-          © 2025 Sudarshan Anand
+          © 2026 Sudarshan Anand
         </p>
       </footer>
     </>
