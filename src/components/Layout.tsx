@@ -90,14 +90,11 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             flexDirection: 'column',
             alignItems: 'center',
             justifyContent: 'center',
-            minHeight: '100vh',
+            minHeight: '100%',
             width: '100%',
             textAlign: 'center',
-            position: 'absolute',
-            top: 10,
-            left: 0,
-            right: 0,
-            bottom: 0,
+            padding: '0.75rem 0.75rem 0',
+            boxSizing: 'border-box',
           }}
         >
           {/* Main title */}

@@ -177,10 +177,10 @@ body.dark-mode {
 
 /* ───────── Hero Section - Transparent Background ───────── */
 .hero-section {
-  height: 100vh;
   min-height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
+  min-height: 100svh;
+  min-height: 100dvh;
+  overflow: visible;
   
   /* Remove background - let body background show through */
   background: transparent;
@@ -196,6 +196,8 @@ body.dark-mode {
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: max(env(safe-area-inset-top), 0.75rem);
+  box-sizing: border-box;
 }
 
 body.dark-mode .hero-section {
