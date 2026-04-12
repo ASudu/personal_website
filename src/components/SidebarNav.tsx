@@ -20,7 +20,7 @@ const SidebarNav: React.FC = () => {
     <aside className="sidebar-nav" aria-label="Primary">
       <NavLink to="/" className="sidebar-avatar-link" aria-label="Go to home">
         <img
-          src="/images/SA_profile.jpg"
+          src="/images/SA_profile_v2.jpg"
           className="sidebar-avatar"
           alt="Sudarshan Anand profile"
         />
