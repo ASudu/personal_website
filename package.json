@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "postbuild": "npx puppeteer browsers install chrome && react-snap",
+    "postbuild": "node scripts/react-snap-prerender.cjs",
     "postinstall": "patch-package",
     "preview": "vite preview"
   },
@@ -53,6 +53,7 @@
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.11",
+    "@sparticuz/chromium": "^147.0.0",
     "patch-package": "^8.0.1",
     "puppeteer": "24.40.0",
     "react-snap": "^1.23.0",
