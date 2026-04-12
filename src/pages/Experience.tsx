@@ -61,7 +61,7 @@ const Experience: React.FC = () => {
                 </div>
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    M.S. Computational Science and Engineering <p className='degree-duration'>[Aug 2024 - present]</p>
+                    M.S. Computational Science and Engineering <p className='degree-duration'>[Aug 2024 - May 2026]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Georgia Institute of Technology, Atlanta <br/> (Georgia, United States)</em>
@@ -111,7 +111,7 @@ const Experience: React.FC = () => {
                     <em>Georgia Institute of Technology <br/> (Atlanta, Georgia, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Developing imaging-based approaches using structural and functional MRI to improve early diagnosis of Parkinson’s disease</li>
+                    <li>Developing imaging-based approaches using structural and functional MRI to improve early diagnosis of Parkinson's disease</li>
                   </ul>
                 </div>
               </div>
@@ -246,13 +246,11 @@ const Experience: React.FC = () => {
                     <em>Rezolve AI <br/> (California, United States) [Remote]</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Built an Agentic AI knowledge search platform, improving enterprise knowledge accessibility and enabling faster information retrieval across teams</li>
+                    <li>Engineered an enterprise <strong>Retrieval-Augmented Generation (RAG)</strong> search MVP using <strong>FastAPI</strong>, <strong>Pinecone</strong>, and <strong>PostgreSQL</strong>, integrating conversational memory to slash policy retrieval to <strong>sub-20-second latency</strong> and drive strategic interest from tier-one tech firms.</li>
                     <br />
-                    <li>Developed an Agentic AI prototype for infrastructure alert triage and resolution, reducing alert handling times from weeks to hours</li>
+                    <li>Optimized platform UI/UX for employee onboarding by developing a <strong>prefix-tree look-ahead search</strong> for instant autocomplete suggestions, automating global trend pipeline updates via <strong>GCP Cloud Run</strong>.</li>
                     <br />
-                    <li>Implemented human-in-the-loop and model-reasoning workflows to ensure responsible AI practices</li>
-                    <br />
-                    <li>Generated strong interest from potential clients and leading market research firms for both products</li>
+                    <li>Architected an Agentic <strong>AI ChatOps system</strong> (Slack/Teams) to automate the IT incident response lifecycle, streamlining <strong>alert triaging</strong> and <strong>dynamic runbook generation</strong>, attracting pilot interest from leading <strong>ITSM providers</strong>.</li>
                   </ul>
                 </div>
               </div>
@@ -272,11 +270,21 @@ const Experience: React.FC = () => {
                     <em>Qure.ai, Bangalore <br/> (Karnataka, India)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
-                    <li>Evaluated the lung nodule detection product using clinical risk models (e.g., Brock model) to approximate malignancy probability based on nodule structural properties, and patient metadata</li>
+                    <li>
+                      Assessed <strong>malignancy risk</strong> of lung nodules by implementing <strong>clinical risk models</strong> (e.g., <strong>Brock model</strong>), leveraging <strong>structural properties</strong> and <strong>patient metadata</strong>.
+                    </li>
                     <br/>
-                    <li>Enhanced AI annotations, achieving a <strong>~45%</strong> improvement in correlation with ground truth</li>
+                    <li>
+                      Optimized a <strong>computer vision</strong>-based <strong>lung nodule detection</strong> product, increasing <strong>AI-to-radiologist correlation</strong> by <strong>~45%</strong> to establish <strong>clinical reliability</strong> for <strong>early cancer diagnosis</strong>.
+                    </li>
                     <br/>
-                    <li>Benchmarked image registration speed for lung nodule tracking in consecutive scans.</li>
+                    <li>
+                      Executed <strong>partial fine-tuning</strong> of <strong>DenseNet121</strong> and <strong>ResNet50</strong> for <strong>texture classification</strong> (solid, ground glass, mixed), utilizing custom <strong>learning rate schedulers</strong> and <strong>optimizers</strong> to surge <strong>classification accuracy</strong> from <strong>~40% to ~85%</strong>.
+                    </li>
+                    <br/>
+                    <li>
+                      Benchmarked <strong>image registration</strong> performance to accelerate <strong>lung nodule tracking</strong> across <strong>longitudinal CT scans</strong>.
+                    </li>
                   </ul>
                 </div>
               </div>

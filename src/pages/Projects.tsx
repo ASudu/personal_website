@@ -54,17 +54,31 @@ const Projects: React.FC = () => {
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    Enterprise Knowledge Search <p className='project-duration'>[Jun 2025 - Aug 2025]</p>
+                    SearchIQ: Agentic AI Knowledge Platform <a className='blog-link' href="https://www.rezolve.ai/rezolve-searchiq-ai-enterprise-search" target="_blank" rel="noopener noreferrer">[product page]</a> <p className='project-duration'>[Jun 2025 - Aug 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Rezolve AI (California, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Launched as <a className='blog-link' href="https://www.rezolve.ai/rezolve-searchiq-ai-enterprise-search" target="_blank" rel="noopener noreferrer">SearchIQ</a></li>
-                    <li>Co-led the end-to-end development of an Agentic AI knowledge search platform, enabling employees to retrieve mission-critical information with precision and reducing search time to under <strong>20 seconds</strong></li>
-                    <li>Architected the solution to meet stringent functional and non-functional requirements, ensuring a robust and scalable enterprise product pipeline</li>
-                    <li>Secured AI Trust and Oversight by implementing Explainability (XAI) principles and Human-in-the-Loop (HITL) governance standards throughout the deployment process</li>
-                    <li>Presented the solution to potential clients and leading market research firms, earning strong positive feedback and interest</li>
+                    <li>
+                      <strong>Core Impact:</strong> Developed a highly scalable enterprise search solution, enabling employees to retrieve mission-critical information in under 20 seconds.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>⚡ Unmatched Speed:</strong> Slashed policy retrieval latency by combining an optimized Retrieval-Augmented Generation (RAG) pipeline with conversational memory and a custom prefix-tree look-ahead search for instant autocomplete.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>🛡️ Enterprise Trust:</strong> Architected with strict Explainable AI (XAI) principles and Human-in-the-Loop (HITL) governance to ensure reliable, secure, and transparent deployments.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>💻 Modern Stack:</strong> Engineered the MVP using FastAPI, Pinecone, and PostgreSQL, while automating global trend pipeline updates via GCP Cloud Run.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>📈 Proven Market Fit:</strong> Delivered successful MVP demonstrations that earned strong positive feedback and generated strategic interest from tier-one tech firms and leading market research agencies.
+                    </li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     Technologies used:
@@ -103,15 +117,27 @@ const Projects: React.FC = () => {
               <div className="project-item">
                 <div className="education-details" style={{ flex: 1 }}>
                   <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
-                    AIOps: Agentic-AI Alert management <p className='project-duration'>[Jun 2025 - Aug 2025]</p>
+                    AIOps: Automated AITSM Resolution Platform <p className='project-duration'>[Jun 2025 - Aug 2025]</p>
                   </h4>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     <em>Rezolve AI (California, United States)</em>
                   </p>
                   <ul style={{ fontSize: '1rem', marginLeft: '1.5rem', marginBottom: '0.5rem', lineHeight: '1.5rem' }}>
-                    <li>Pioneered an Agentic AI solution for AITSM, automating critical infrastructure alert response and resolution planning</li>
-                    <li>Ensured AI trust and oversight by implementing explainability principles and Human-in-the-Loop governance</li>
-                    <li>Drove critical business momentum by showcasing the high-impact prototype to potential clients, securing favorable reception and impressing top-tier technology companies within the competitive AITSM domain</li>
+                    <li>
+                      <strong>Core Impact:</strong> Architected an end-to-end Agentic AI ChatOps system (Slack/Teams) to automate the IT incident response lifecycle, pioneering intelligent resolution planning for critical infrastructure.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>⚡ Accelerated Resolution:</strong> Streamlined complex alert triaging and powered dynamic runbook generation to drastically reduce infrastructure downtime and manual overhead.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>🛡️ AI Governance:</strong> Ensured enterprise-grade trust and operational oversight by embedding strict explainability (XAI) principles and Human-in-the-Loop (HITL) governance.
+                    </li>
+                    <br/>
+                    <li>
+                      <strong>📈 Strategic Traction:</strong> Drove critical business momentum by showcasing high-impact prototypes, securing pilot interest and strong market validation from leading ITSM providers and top-tier tech firms.
+                    </li>
                   </ul>
                   <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
                     Technologies used:
