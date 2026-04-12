@@ -5,7 +5,7 @@ const Blog: React.FC = () => {
   return (
     <Layout title="Blog | Sudarshan Anand" activePage="blog">
       <div id="blog-content">
-        <h4>Blog</h4>
+        <h1>Blog</h1>
         <p style={{ fontSize: '1.2rem' }}>Welcome to my blog where I share insights and experiences.</p>
         <div className="blog-posts">
           <article>

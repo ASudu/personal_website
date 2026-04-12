@@ -24,8 +24,11 @@ const FunCorner: React.FC = () => {
   return (
     <Layout title="Fun Corner | Sudarshan Anand" activePage="fun_corner">
       <div id="fun-corner-content" style={{ padding: '2rem' }}>
-        <h3>Fun Corner</h3>
-        <h4 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>My Artworks</h4>
+        <h1>Fun Corner</h1>
+        <div style={{ fontSize: '1.2rem', marginTop: '1.5rem' }}>
+          Visit my Instagram page: <a className='blog-link' href="https://www.instagram.com/through_sa_lens?igsh=YzRkN250aXUyYXJ3" target="_blank" rel="noopener noreferrer">@through_sa_lens</a> for more of my works.
+        </div>
+        <h2 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>My Artworks</h2>
         <div 
           className="pinterest-grid" 
           style={{ 
@@ -61,7 +64,7 @@ const FunCorner: React.FC = () => {
 
         <br /><br />
 
-        <h4 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>My Photography</h4>
+        <h2 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>My Photography</h2>
         <div 
           className="pinterest-grid" 
           style={{ 
@@ -93,10 +96,6 @@ const FunCorner: React.FC = () => {
               </a>
             </div>
           ))}
-        </div>
-
-        <div style={{ fontSize: '1.2rem', marginTop: '1.5rem' }}>
-          For more such content, visit my Instagram page: <a className='blog-link' href="https://www.instagram.com/through_sa_lens?igsh=YzRkN250aXUyYXJ3" target="_blank" rel="noopener noreferrer">@through_sa_lens</a>
         </div>
       </div>
     </Layout>

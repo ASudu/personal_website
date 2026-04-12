@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <Layout title="About me | Sudarshan Anand" activePage="about_me">
       <div id="home-content" style={{ alignContent: 'center', padding: '2rem' }}>
-        <h4>Hey, I'm Sudarshan Anand</h4>
+        <h1>Hey, I'm Sudarshan Anand</h1>
 
         <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>
           <ul>
@@ -31,7 +31,7 @@ const Home: React.FC = () => {
           </ul>
         </div>
 
-        <h4>News</h4>
+        <h1>News</h1>
 
         <div className="scrollable-container" tabIndex={0}>
           <div style={{ alignContent: 'center', fontSize: '1.2rem' }}>

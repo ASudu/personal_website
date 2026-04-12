@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
   return (
     <Layout title="Experience | Sudarshan Anand" activePage="experience">
       <div id="experience-content">
-        <h4>Experience</h4>
+        <h1>Experience</h1>
         
         {/* Tab Navigation */}
         <div className="tab-navigation">

@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
   return (
     <Layout title="Projects | Sudarshan Anand" activePage="projects">
       <div id="projects-content">
-        <h4>Projects</h4>
+        <h1>Projects</h1>
         
         {/* Tab Navigation */}
         <div className="tab-navigation">

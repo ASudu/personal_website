@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Moon, Sun} from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
-import { useFerrisWheel } from '../hooks/useFerrisWheel';
+import SidebarNav from './SidebarNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faGraduationCap, faFile, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -12,31 +11,9 @@ interface LayoutProps {
   activePage: string;
 }
 
-const getActivePageFromPath = (pathname: string, fallbackPage: string) => {
-  switch (pathname) {
-    case '/':
-      return 'about_me';
-    case '/blog':
-      return 'blog';
-    case '/fun-corner':
-    case '/fun_corner':
-      return 'fun_corner';
-    case '/projects':
-      return 'projects';
-    case '/experience':
-      return 'experience';
-    default:
-      return fallbackPage;
-  }
-};
-
-const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const location = useLocation();
-  const currentActivePage = getActivePageFromPath(location.pathname, activePage);
-
-  // Initialize the Ferris Wheel navigation system
-  useFerrisWheel(currentActivePage);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     // Set the browser tab title
@@ -52,6 +29,26 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
       document.body.classList.add('dark-mode');
     }
   }, [title]);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const mainContent = document.getElementById('mainContent');
+      if (!mainContent) {
+        setShowBackToTop(false);
+        return;
+      }
+
+      const threshold = mainContent.offsetTop + 40;
+      setShowBackToTop(window.scrollY > threshold);
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
 
   // Toggle between light and dark themes
   const toggleTheme = () => {
@@ -151,7 +148,12 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
       {/* Main content section */}
       <section className="page-content" id="mainContent">
         <div className="container">
-          {/* Left side - page content */}
+          {/* Left side - Sticky navigation */}
+          <div className="right">
+            <SidebarNav />
+          </div>
+
+          {/* Right side - Page content */}
           <div className="left">
             <div id="content">
               <div className="page-content active">
@@ -159,61 +161,16 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
               </div>
             </div>
           </div>
-
-          {/* Right side - Navigation mindmap */}
-          <div className="right">
-            <div className="mindmap">
-              {/* Center profile image */}
-              <div className="center-wrapper">
-                <Link to="/">
-                  <img 
-                    src="/images/sudarshan_profile.svg" 
-                    className="center-image" 
-                    id="profileImage" 
-                    style={{ cursor: 'pointer' }}
-                    alt="Sudarshan Anand Profile"
-                  />
-                </Link>
-              </div>
-              
-              {/* Rotating navigation spokes */}
-              <div className="rotation-wrapper" id="rotationWrapper">
-                <div className="spoke-system" id="spokeSystem">
-                  {/* Home spoke - 180 degrees (top) */}
-                  <div className={`spoke ${currentActivePage === 'about_me' ? 'active' : ''}`} data-angle="180" data-page="about_me">
-                    <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/">About Me</Link>
-                  </div>
-                  
-                  {/* Blog spoke - 108 degrees */}
-                  <div className={`spoke ${currentActivePage === 'blog' ? 'active' : ''}`} data-angle="108" data-page="blog">
-                    <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/blog">Blog</Link>
-                  </div>
-
-                  {/* Fun corner spoke - 36 degrees */}
-                  <div className={`spoke ${currentActivePage === 'fun_corner' ? 'active' : ''}`} data-angle="36" data-page="fun_corner">
-                    <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/fun-corner">Fun corner</Link>
-                  </div>
-                  
-                  {/* Projects spoke - 252 degrees */}
-                  <div className={`spoke ${currentActivePage === 'projects' ? 'active' : ''}`} data-angle="252" data-page="projects">
-                    <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/projects">Projects</Link>
-                  </div>
-
-                  {/* Experience spoke - 324 degrees */}
-                  <div className={`spoke ${currentActivePage === 'experience' ? 'active' : ''}`} data-angle="324" data-page="experience">
-                    <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/experience">Experience</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
+
+      <button
+        className={`back-to-top-btn floating ${showBackToTop ? 'visible' : 'hidden'}`}
+        onClick={scrollToSection.bind(null, 'mainContent')}
+        aria-label="Back to section top"
+      >
+        Back to Top
+      </button>
 
       {/* Footer */}
       <footer>
