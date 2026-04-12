@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "postbuild": "react-snap",
+    "postbuild": "npx puppeteer browsers install chrome && react-snap",
     "postinstall": "patch-package",
     "preview": "vite preview"
   },
