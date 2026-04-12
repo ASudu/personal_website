@@ -8,13 +8,64 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const require = createRequire(import.meta.url)
 const vitePrerender = require('vite-plugin-prerender')
-const PuppeteerRenderer = vitePrerender.PuppeteerRenderer
+const puppeteer = require('puppeteer')
 
-const prerenderRenderer = new PuppeteerRenderer({ headless: true })
+class ModernPuppeteerRenderer {
+  private browser: any
+  private readonly renderAfterSelector?: string
 
-if (typeof prerenderRenderer.destroy !== 'function') {
-  prerenderRenderer.destroy = () => Promise.resolve()
+  constructor(options: { renderAfterElementExists?: string } = {}) {
+    this.browser = null
+    this.renderAfterSelector = options.renderAfterElementExists
+  }
+
+  async initialize() {
+    this.browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage'],
+    })
+  }
+
+  async renderRoutes(routes: string[], prerenderer: any) {
+    const { server } = prerenderer.getOptions()
+    const host = `http://127.0.0.1:${server.port}`
+    const renderedRoutes = []
+
+    for (const route of routes) {
+      const page = await this.browser.newPage()
+
+      await page.goto(`${host}${route}`, {
+        waitUntil: 'networkidle0',
+      })
+
+      if (this.renderAfterSelector) {
+        await page.waitForSelector(this.renderAfterSelector, { timeout: 15000 })
+      }
+
+      const html = await page.content()
+      renderedRoutes.push({
+        route,
+        originalRoute: route,
+        html,
+      })
+
+      await page.close()
+    }
+
+    return renderedRoutes
+  }
+
+  async destroy() {
+    if (this.browser) {
+      await this.browser.close()
+      this.browser = null
+    }
+  }
 }
+
+const prerenderRenderer = new ModernPuppeteerRenderer({
+  renderAfterElementExists: '.page-content.active',
+})
 
 export default defineConfig({
   plugins: [
