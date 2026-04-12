@@ -99,22 +99,22 @@ export const useFerrisWheel = (activePage: string) => {
     console.log('Active page:', activePage);
     console.log('Found active spoke:', activeSpoke);
     
-    if (activeSpoke) {
-      // Remove active class from all spokes
-      spokes.forEach(spoke => spoke.classList.remove('active'));
-      
-      // Add active class to current page spoke
-      activeSpoke.classList.add('active');
-      console.log('Set active class on spoke for:', activePage);
-
-      // Rotate the wheel to bring active spoke to top
-      // Use setTimeout to ensure DOM is ready
-      setTimeout(() => {
-        rotateToSpoke(activeSpoke);
-      }, 50);
-    } else {
-      console.warn('No spoke found for active page:', activePage);
+    if (!activeSpoke) {
+      return;
     }
+
+    // Remove active class from all spokes
+    spokes.forEach(spoke => spoke.classList.remove('active'));
+    
+    // Add active class to current page spoke
+    activeSpoke.classList.add('active');
+    console.log('Set active class on spoke for:', activePage);
+
+    // Rotate the wheel to bring active spoke to top
+    // Use setTimeout to ensure DOM is ready
+    setTimeout(() => {
+      rotateToSpoke(activeSpoke);
+    }, 50);
 
     // Handle mouse wheel scroll events
     const handleWheelScroll = (e: WheelEvent) => {

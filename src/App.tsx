@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
 import FunCorner from './pages/FunCorner'
@@ -12,7 +12,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/fun_corner" element={<FunCorner />} />
+        <Route path="/fun-corner" element={<FunCorner />} />
+        <Route path="/fun_corner" element={<Navigate to="/fun-corner" replace />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/thank-you" element={<ThankYou />} />

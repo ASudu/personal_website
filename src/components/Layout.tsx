@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Moon, Sun} from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useFerrisWheel } from '../hooks/useFerrisWheel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faGraduationCap, faFile, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -12,11 +12,31 @@ interface LayoutProps {
   activePage: string;
 }
 
+const getActivePageFromPath = (pathname: string, fallbackPage: string) => {
+  switch (pathname) {
+    case '/':
+      return 'about_me';
+    case '/blog':
+      return 'blog';
+    case '/fun-corner':
+    case '/fun_corner':
+      return 'fun_corner';
+    case '/projects':
+      return 'projects';
+    case '/experience':
+      return 'experience';
+    default:
+      return fallbackPage;
+  }
+};
+
 const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const location = useLocation();
+  const currentActivePage = getActivePageFromPath(location.pathname, activePage);
 
   // Initialize the Ferris Wheel navigation system
-  useFerrisWheel(activePage);
+  useFerrisWheel(currentActivePage);
 
   useEffect(() => {
     // Set the browser tab title
@@ -160,31 +180,31 @@ const Layout: React.FC<LayoutProps> = ({ children, title, activePage }) => {
               <div className="rotation-wrapper" id="rotationWrapper">
                 <div className="spoke-system" id="spokeSystem">
                   {/* Home spoke - 180 degrees (top) */}
-                  <div className={`spoke ${activePage === 'about_me' ? 'active' : ''}`} data-angle="180" data-page="about_me">
+                  <div className={`spoke ${currentActivePage === 'about_me' ? 'active' : ''}`} data-angle="180" data-page="about_me">
                     <div className="spoke-line"></div>
                     <Link className="spoke-label" to="/">About Me</Link>
                   </div>
                   
                   {/* Blog spoke - 108 degrees */}
-                  <div className={`spoke ${activePage === 'blog' ? 'active' : ''}`} data-angle="108" data-page="blog">
+                  <div className={`spoke ${currentActivePage === 'blog' ? 'active' : ''}`} data-angle="108" data-page="blog">
                     <div className="spoke-line"></div>
                     <Link className="spoke-label" to="/blog">Blog</Link>
                   </div>
 
                   {/* Fun corner spoke - 36 degrees */}
-                  <div className={`spoke ${activePage === 'fun_corner' ? 'active' : ''}`} data-angle="36" data-page="fun_corner">
+                  <div className={`spoke ${currentActivePage === 'fun_corner' ? 'active' : ''}`} data-angle="36" data-page="fun_corner">
                     <div className="spoke-line"></div>
-                    <Link className="spoke-label" to="/fun_corner">Fun corner</Link>
+                    <Link className="spoke-label" to="/fun-corner">Fun corner</Link>
                   </div>
                   
                   {/* Projects spoke - 252 degrees */}
-                  <div className={`spoke ${activePage === 'projects' ? 'active' : ''}`} data-angle="252" data-page="projects">
+                  <div className={`spoke ${currentActivePage === 'projects' ? 'active' : ''}`} data-angle="252" data-page="projects">
                     <div className="spoke-line"></div>
                     <Link className="spoke-label" to="/projects">Projects</Link>
                   </div>
 
                   {/* Experience spoke - 324 degrees */}
-                  <div className={`spoke ${activePage === 'experience' ? 'active' : ''}`} data-angle="324" data-page="experience">
+                  <div className={`spoke ${currentActivePage === 'experience' ? 'active' : ''}`} data-angle="324" data-page="experience">
                     <div className="spoke-line"></div>
                     <Link className="spoke-label" to="/experience">Experience</Link>
                   </div>
