@@ -6,7 +6,28 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "postbuild": "react-snap",
+    "postinstall": "patch-package",
     "preview": "vite preview"
+  },
+  "reactSnap": {
+    "source": "dist",
+    "include": [
+      "/",
+      "/blog",
+      "/fun-corner",
+      "/projects",
+      "/experience",
+      "/thank-you"
+    ],
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ]
+  },
+  "overrides": {
+    "puppeteer": "24.40.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
@@ -32,9 +53,10 @@
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.11",
-    "puppeteer": "^24.40.0",
+    "patch-package": "^8.0.1",
+    "puppeteer": "24.40.0",
+    "react-snap": "^1.23.0",
     "typescript": "^5.5.4",
-    "vite": "^7.0.6",
-    "vite-plugin-prerender": "^1.0.8"
+    "vite": "^7.0.6"
   }
 }
