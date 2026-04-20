@@ -3,7 +3,7 @@ import { Moon, Sun} from 'lucide-react';
 import SidebarNav from './SidebarNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faGraduationCap, faFile, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -102,15 +102,43 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             SUDARSHAN ANAND
           </h1>          
           {/* Subtitle and call-to-action */}
-          <div className="hero-subtitle" style={{ textAlign: 'center', marginTop: '0.5rem' }}>
-            <span style={{ fontSize: '1.5rem' }}>
-              NSF-EMBS-Google NextGen Scholar | Graduate Teaching Assistant | MS CSE @ GT | AI Researcher
-            </span>
-            <br />
-            <br />
-            <span style={{ fontSize: '1.2rem', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-              <FontAwesomeIcon icon={faEnvelope} style={{ verticalAlign: 'middle' }} /><a href="mailto:asudarshan14@gmail.com" className='blog-link' style={{ verticalAlign: 'middle' }}>asudarshan14@gmail.com</a>  |  <FontAwesomeIcon icon={faLocationDot} style={{ verticalAlign: 'middle' }} />Atlanta, GA
-            </span>
+          <div 
+            className="hero-subtitle" 
+            style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center', 
+              gap: '1rem', // Replaces the <br/> tags for clean, uniform spacing
+              marginTop: '0.5rem',
+              textAlign: 'center' 
+            }}
+          >
+            {/* H2 gives this high priority for ATS parsers */}
+            <h2 style={{ fontSize: '1.5rem', margin: 0, fontWeight: 600 }}>
+              AI/ML Research Scientist | Product Developer | Data Scientist
+            </h2>
+            
+            {/* H3 gives secondary priority */}
+            <h3 style={{ fontSize: '1.3rem', margin: 0, fontWeight: 400 }}>
+              MS Computational Science & Engineering @ Georgia Institute of Technology (Aug 2024 - May 2026)
+            </h3>
+            
+            {/* Standard paragraph tag for contact info */}
+            <p style={{ 
+              fontSize: '1.2rem', 
+              display: 'inline-flex', 
+              alignItems: 'center', 
+              gap: '0.75rem',
+              margin: 0
+            }}>
+              <FontAwesomeIcon icon={faEnvelope} />
+              <a href="mailto:asudarshan14@gmail.com" className="blog-link">
+                asudarshan14@gmail.com
+              </a> 
+              <span style={{ color: '#888' }}>|</span> 
+              <FontAwesomeIcon icon={faLocationDot} />
+              Atlanta, GA
+            </p>
           </div>
           <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
             <a className="contact-btn" href="/files/Sudarshan_Anand_Resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -124,9 +152,6 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             </a>
             <a className="contact-btn" href="https://github.com/ASudu" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} style={{ verticalAlign: 'middle', scale: '1.2' }} /> GitHub
-            </a>
-            <a className="contact-btn" href="https://www.instagram.com/through_sa_lens?igsh=YzRkN250aXUyYXJ3" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Instagram
             </a>
           </div> 
           {/* Button to scroll to main content */}

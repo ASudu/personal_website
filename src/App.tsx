@@ -3,6 +3,7 @@ import Home from './pages/Home'
 import Blog from './pages/Blog'
 import FunCorner from './pages/FunCorner'
 import Projects from './pages/Projects'
+import Publications from './pages/Publications'
 import ThankYou from './pages/ThankYou'
 import Experience from './pages/Experience'
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/fun-corner" element={<FunCorner />} />
         <Route path="/fun_corner" element={<Navigate to="/fun-corner" replace />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/publications" element={<Publications />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/thank-you" element={<ThankYou />} />
       </Routes>
