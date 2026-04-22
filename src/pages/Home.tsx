@@ -2,14 +2,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  // faAward,
+  faAward,
   faCode,
   faDiagramProject,
   faLightbulb,
   // faMedal,
   faServer,
   faScrewdriverWrench,
-  // faTrophy,
+  faTrophy,
   faHandHoldingMedical,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -88,29 +88,45 @@ const coreStrengths: CoreStrength[] = [
   },
 ];
 
-// type HonorAward = {
-//   title: string;
-//   details: string;
-//   icon: React.ReactNode;
-// };
+type HonorAward = {
+  title: string;
+  details: React.ReactNode;
+  icon: React.ReactNode;
+};
 
-// const honorsAndAwards: HonorAward[] = [
-//   {
-//     title: 'Award Placeholder 01',
-//     details: 'Add award title, event name, and year here.',
-//     icon: <FontAwesomeIcon icon={faTrophy} aria-hidden="true" />,
-//   },
-//   {
-//     title: 'Award Placeholder 02',
-//     details: 'Add a short one-line context or achievement summary.',
-//     icon: <FontAwesomeIcon icon={faMedal} aria-hidden="true" />,
-//   },
-//   {
-//     title: 'Award Placeholder 03',
-//     details: 'Add supporting details like organizer, rank, or recognition.',
-//     icon: <FontAwesomeIcon icon={faAward} aria-hidden="true" />,
-//   },
-// ];
+const honorsAndAwards: HonorAward[] = [
+  {
+    title: 'IEEE BHI 2025 Data Challenge Competition Champion',
+    details:(
+      <>
+        {''}
+        <strong>Oct 2025</strong>
+        <br />
+        Developed an AI/ML-driven depression risk prediction model, winning the IEEE-sponsored competition (backed by NSF & Google)
+        {''}
+      </>
+    ),
+    icon: <FontAwesomeIcon icon={faTrophy} aria-hidden="true" />,
+  },
+  {
+    title: 'NSF-EMBS-Google Young ProfessionalNextGen Scholar',
+    details:(
+      <>
+        {''}
+        <strong>Sept 2025</strong>
+        <br />
+        Recognized for high-impact Biomedical AI research, including an invitation to present at the IEEE BHI 2025 conference
+        {''}
+      </>
+    ),
+    icon: <FontAwesomeIcon icon={faAward} aria-hidden="true" />,
+  },
+  // {
+  //   title: 'Award Placeholder 03',
+  //   details: 'Add supporting details like organizer, rank, or recognition.',
+  //   icon: <FontAwesomeIcon icon={faAward} aria-hidden="true" />,
+  // },
+];
 
 const Home: React.FC = () => {
   return (
@@ -148,6 +164,12 @@ const Home: React.FC = () => {
             With dual Master's degrees in computational fields and hands-on experience in building scalable ML solutions, I bridge the gap between mathematical rigor and production-ready software.
         </div>
 
+        <div className="home-outro">
+          <p>
+            I am currently seeking <strong>ML Research, Engineering, and Data Science</strong> roles focused on scalable, safety-aware AI.
+          </p>
+        </div>
+
         <section className="home-strengths" aria-labelledby="core-strengths-heading">
           <div className="home-section-heading">
             <p className="home-kicker">Core strengths</p>
@@ -172,19 +194,13 @@ const Home: React.FC = () => {
           </ul>
         </section>
 
-        <div className="home-outro">
-          <p>
-            I am currently seeking <strong>ML Research, Engineering, and Data Science</strong> roles focused on scalable, safety-aware AI.
-          </p>
-        </div>
-
         <section className="home-awards" aria-labelledby="honors-awards-heading">
-          {/* <div className="home-section-heading">
+          <div className="home-section-heading">
             <p className="home-kicker">Recognition</p>
             <h2 id="honors-awards-heading">Honors &amp; Awards</h2>
-          </div> */}
+          </div>
 
-          {/* <ul className="home-awards-grid">
+          <ul className="home-awards-grid">
             {honorsAndAwards.map((award) => (
               <li key={award.title} className="home-award-tile">
                 <span className="home-award-icon" aria-hidden="true">
@@ -194,7 +210,7 @@ const Home: React.FC = () => {
                 <p>{award.details}</p>
               </li>
             ))}
-          </ul> */}
+          </ul>
         </section>
       </div>
     </Layout>
