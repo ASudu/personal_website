@@ -205,6 +205,225 @@ body.dark-mode .hero-section {
   color: var(--text-dark);
 }
 
+#home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#home-content h1 {
+  margin: 0;
+}
+
+.home-intro,
+.home-strengths,
+.home-outro {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+body.dark-mode .home-intro {
+  background: rgba(0, 0, 0, 0.16);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.home-section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.home-kicker {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--theme-link-color);
+}
+
+.home-section-heading h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.home-strengths-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-strength-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.25rem 1.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+.home-strength-card--featured {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgba(1, 169, 249, 0.16), rgba(127, 255, 249, 0.12));
+}
+
+body.dark-mode .home-strength-card {
+  background: rgba(0, 0, 0, 0.14);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .home-strength-card--featured {
+  background: linear-gradient(135deg, rgba(7, 37, 56, 0.75), rgba(0, 0, 0, 0.25));
+}
+
+.home-strength-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.home-strength-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+  color: var(--theme-link-color);
+  background: rgba(1, 169, 249, 0.12);
+  border: 1px solid rgba(1, 169, 249, 0.18);
+}
+
+.home-strength-icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.home-strength-card h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.3;
+}
+
+.home-strength-card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--theme-text-secondary);
+}
+
+.home-outro {
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--theme-link-color);
+  border-radius: 0 16px 16px 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .home-outro {
+  background: rgba(0, 0, 0, 0.14);
+}
+
+.home-outro p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.home-awards {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-award-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 0.75rem;
+  min-height: 220px;
+  padding: 1.25rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.11);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+}
+
+body.dark-mode .home-award-tile {
+  background: rgba(0, 0, 0, 0.14);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.home-award-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  color: var(--theme-link-color);
+  background: rgba(1, 169, 249, 0.12);
+  border: 1px solid rgba(1, 169, 249, 0.18);
+  font-size: 1.2rem;
+}
+
+.home-award-tile h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.home-award-tile p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--theme-text-secondary);
+}
+
+@media (max-width: 900px) {
+  .home-strengths-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-strength-card--featured {
+    grid-column: auto;
+  }
+
+  .home-awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .hero-section h1 {
   font-size: 5vw;
   letter-spacing: 0.3rem;
