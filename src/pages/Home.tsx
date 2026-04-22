@@ -166,7 +166,7 @@ const Home: React.FC = () => {
 
         <div className="home-outro">
           <p>
-            I am currently seeking <strong>ML Research, Engineering, and Data Science</strong> roles focused on scalable, safety-aware AI.
+            Actively seeking <strong>ML Research, Engineering, and Data Science</strong> roles focused on scalable, safety-aware AI.
           </p>
         </div>
 
