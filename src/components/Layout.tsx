@@ -145,7 +145,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
               <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Resume (1-page)
             </a>
             <a className="contact-btn" href="/files/Sudarshan_Anand_CV.pdf" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Full Academic CV
+              <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Detailed CV
             </a>
             <a className="contact-btn" href="https://www.linkedin.com/in/sanand315/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} style={{ verticalAlign: 'middle', scale: '1.2' }}/> LinkedIn
