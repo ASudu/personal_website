@@ -141,10 +141,10 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             </p>
           </div>
           <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
-            <a className="contact-btn" href="/files/Sudarshan_Anand_Resume_May2026.pdf" target="_blank" rel="noopener noreferrer">
+            <a className="contact-btn" href="/files/Sudarshan_Anand_Resume_June2026.pdf" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Resume (1-page)
             </a>
-            <a className="contact-btn" href="/files/Sudarshan_Anand_CV_May2026.pdf" target="_blank" rel="noopener noreferrer">
+            <a className="contact-btn" href="/files/Sudarshan_Anand_CV_June2026.pdf" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFile} style={{ verticalAlign: 'middle', scale: '1.2' }}/> Detailed CV
             </a>
             <a className="contact-btn" href="https://www.linkedin.com/in/sanand315/" target="_blank" rel="noopener noreferrer">
