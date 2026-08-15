@@ -160,11 +160,11 @@ const Home: React.FC = () => {
 
             I am an <strong>AI Engineer</strong> working at Union Pacific Railroad (via L&T Tech Services) working on Agentic AI development for the railroad domain.
             I focus on building AI systems that are interpretable, robust, and scalable for real-world applications.
-            <br/>
+            <br style={{ margin: '0 0.7rem' }} />
             As a Georgia Tech graduate with dual Master's degrees, my expertise bridges the gap between mathematical rigor and scalable machine learning solutions.
             Previously, I worked as a Graduate Student Researcher at the Georgia Tech Bio-MIBLab developing multimodal models to track neurodegenerative disorders,
              and at AdityaLab where I developed open-source library for researchers to smoothly integrate time-series foundational models in their workflows.
-            <br />
+            <br style={{ margin: '0 0.7rem' }} />
             My current research and professional interests lie in Multimodal ML, Medical Imaging, and Graph ML.
         </div>
 

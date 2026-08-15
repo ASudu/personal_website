@@ -115,13 +115,8 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
           >
             {/* H2 gives this high priority for ATS parsers */}
             <h2 style={{ fontSize: '1.5rem', margin: 0, fontWeight: 600 }}>
-              AI/ML Research Scientist | Product Developer | Data Scientist
+              AI Engineer | CSE @ Georgia Tech'26 | BITSP'24
             </h2>
-            
-            {/* H3 gives secondary priority */}
-            <h3 style={{ fontSize: '1.3rem', margin: 0, fontWeight: 400 }}>
-              MS Computational Science & Engineering @ Georgia Institute of Technology (Aug 2024 - May 2026)
-            </h3>
             
             {/* Standard paragraph tag for contact info */}
             <p style={{ 
@@ -137,7 +132,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
               </a> 
               <span style={{ color: '#888' }}>|</span> 
               <FontAwesomeIcon icon={faLocationDot} />
-              Atlanta, GA
+              <span>Omaha, NE</span>
             </p>
           </div>
           <div className="contact-methods" style={{ marginTop: '0.5rem' }}>
