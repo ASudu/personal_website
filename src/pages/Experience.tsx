@@ -234,6 +234,26 @@ const Experience: React.FC = () => {
               <div className="experience-item">
                 <div className="org-logo">
                   <img 
+                    src="/images/uprr-logo.jpeg" 
+                    alt="Union Pacific Railroad Logo"
+                  />
+                </div>
+                <div className="education-details" style={{ flex: 1 }}>
+                  <h4 style={{ fontSize: '1.3rem', marginBottom: '0.5rem' }}>
+                    AI Engineer <p className='degree-duration'>[Jun 2025 - Aug 2025]</p>
+                  </h4>
+                  <p style={{ fontSize: '1.1rem', color: 'var(--theme-text-secondary)' }}>
+                    <em>Union Pacific Railroad <br/> (Nebraska, United States)</em>
+                  </p>
+                  <ul style={{ fontSize: '1rem', marginLeft: '1.5rem' }}>
+                    <li>Agentic AI development for the railroad domain.</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div className="experience-item">
+                <div className="org-logo">
+                  <img 
                     src="/images/rezolve-logo.png" 
                     alt="Rezolve AI Logo"
                   />

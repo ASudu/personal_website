@@ -158,16 +158,14 @@ const Home: React.FC = () => {
           </ul>
            */}
 
-            I am an <strong>NSF-EMBS-Google NextGen Scholar</strong> and <strong>AI researcher</strong> who focuses on building ML systems that are as interpretable as they are powerful.
+            I am an <strong>AI Engineer</strong> working at Union Pacific Railroad (via L&T Tech Services) working on Agentic AI development for the railroad domain.
+            I focus on building AI systems that are interpretable, robust, and scalable for real-world applications.
+            <br/>
+            As a Georgia Tech graduate with dual Master's degrees, my expertise bridges the gap between mathematical rigor and scalable machine learning solutions.
+            Previously, I worked as a Graduate Student Researcher at the Georgia Tech Bio-MIBLab developing multimodal models to track neurodegenerative disorders,
+             and at AdityaLab where I developed open-source library for researchers to smoothly integrate time-series foundational models in their workflows.
             <br />
-            <br />
-            With dual Master's degrees in computational fields and hands-on experience in building scalable ML solutions, I bridge the gap between mathematical rigor and production-ready software.
-        </div>
-
-        <div className="home-outro">
-          <p>
-            Actively seeking <strong>ML Research, Engineering, and Data Science</strong> roles focused on scalable, safety-aware AI.
-          </p>
+            My current research and professional interests lie in Multimodal ML, Medical Imaging, and Graph ML.
         </div>
 
         <section className="home-strengths" aria-labelledby="core-strengths-heading">
